@@ -1,0 +1,41 @@
+name: Auto Update Wiki and README
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # 每 30 分钟执行一次
+  workflow_dispatch:       # 支持手动触发
+
+permissions:
+  contents: write  # 允许写入仓库内容
+
+jobs:
+  update-wiki-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出主仓库（包含 README.md 和脚本）
+      - name: Checkout Main Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # 3. 设置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      # 5. 运行更新脚本
+      - name: Run Update Script
+        run: |
+          python get_v2ray_sub.py
+
+      # 6. 提交和推送更新到主仓库（README.md）
+      - name: Commit and Push README Updates
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "actions@github.com"
+          git add README.md
+          git add .
+          git commit -m "Auto-update Wiki: Increment domains and update timestamp" || echo "No changes to commit"          
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/HikerX/zhifan_subscribe.git

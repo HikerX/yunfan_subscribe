@@ -29,7 +29,6 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install requests
-          pip install base64
 
       # 5. 运行更新脚本
       - name: Run Update Script

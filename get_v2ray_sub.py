@@ -46,13 +46,13 @@ for url in v2ray_urls:
     sub_urls.append(url)
 
 ss_ssr_urls = re.findall(r"data-snippet-clipboard-copy-content=\"([^\"]+)\"", ss_html);
-ss_urls = filter ( lambda url : re.match("ss://", url) ,  ss_ssr_urls )
+#ss_urls = filter ( lambda url : re.match("ss://", url) ,  ss_ssr_urls )
 
 print(f"{len(v2ray_urls)} v2ray_url, {len(ss_ssr_urls)} ss_ssr_urls")
 
 #format
 #sub_urls = [u.replace("&amp;", "&")  for u in urls ]
-sub_urls.extend(ss_urls);
+sub_urls.extend(ss_ssr_urls);
 #print(sub_urls)
 
 subContent = base64.b64encode("\n".join(sub_urls).encode("utf-8")).decode("utf-8");

@@ -1,0 +1,2 @@
+{'id': '27b8a625-4f4b-4428-9f0f-8a2317db7c79', 'remarks': 'SS%E8%8A%82%E7%82%B9-ipv6', 'server': '[2001:bc8:32d7:2013::10]', 'server_port': '11111', 'password': 'dongtaiwang.com', 'method': 'aes-256-gcm', 'plugin': '', 'plugin_opts': ''}
+{"version": 1, "servers": [{"id": "27b8a625-4f4b-4428-9f0f-8a2317db7c79", "remarks": "SS%E8%8A%82%E7%82%B9-ipv6", "server": "[2001:bc8:32d7:2013::10]", "server_port": "11111", "password": "dongtaiwang.com", "method": "aes-256-gcm", "plugin": "", "plugin_opts": ""}]}

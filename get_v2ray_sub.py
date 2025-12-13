@@ -73,8 +73,9 @@ print(f"{len(v2_mix_urls)} v2ray_url, {len(ss_ssr_urls)} ssr_urls")
 def trans_uri2cfg(ss_uri):
     #SS-URI = "ss://" userinfo "@" hostname ":" port [ "/" ] [ "?" plugin ] [ "#" tag ]
     #userinfo = websafe-base64-encode-utf8(method  ":" password)
-    #           method ":" password    
-    mPattern = r"ss://(?P<userinfo>[\w=+-]+)@(?P<hostname>[A-Za-z0-9:.\[\]]+):(?P<port>[A-Za-z0-9:.]+)#(?P<tag>.+)"
+    #           method ":" password 
+    # hostname ipv4 111.22.22.33:2345, ipv6 [2001:bc8:32d7:2013::10]:1111，提取ipv6地址需注意包围[]
+    mPattern = r"ss://(?P<userinfo>[\w=+-]+)@\[?(?P<hostname>[A-Za-z0-9:.]+)\]?:(?P<port>[A-Za-z0-9:.]+)#(?P<tag>.+)"
     matched = re.search(mPattern, ss_uri)
     #print(matched.group("hostname"))
     #print(matched.group("port"))    

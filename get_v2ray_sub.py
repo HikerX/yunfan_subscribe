@@ -1,6 +1,10 @@
 import requests;
 import re;
 import base64;
+import json
+import uuid;
+import urllib.parse
+
 
 ss_url_github = "https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7";
 v2ray_url_github = "https://github.com/Alvin9999/new-pac/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7";
@@ -64,17 +68,52 @@ for url in v2_mix_urls:
 
 print(f"{len(v2_mix_urls)} v2ray_url, {len(ss_ssr_urls)} ssr_urls")
 
+#将SS-URI链接转换为在线更新要求的json格式配置
+#https://shadowsocks.org/doc/sip008.html
+def trans_uri2cfg(ss_uri):
+    #SS-URI = "ss://" userinfo "@" hostname ":" port [ "/" ] [ "?" plugin ] [ "#" tag ]
+    #userinfo = websafe-base64-encode-utf8(method  ":" password)
+    #           method ":" password    
+    mPattern = r"ss://(?P<userinfo>[\w=+-]+)@(?P<hostname>[A-Za-z0-9:.\[\]]+):(?P<port>[A-Za-z0-9:.]+)#(?P<tag>.+)"
+    matched = re.search(mPattern, ss_uri)
+    #print(matched.group("hostname"))
+    #print(matched.group("port"))    
+    info_ec = matched.group("userinfo");
+    while len(info_ec) % 4 != 0:
+        info_ec += "=";
+    info = base64.urlsafe_b64decode(
+    info_ec.encode("utf-8")).decode("utf-8")   
+    info_sub = info.split(":");
+    uuidv4 = str(uuid.uuid4())
+    #print(uuidv4)
+    
+    cfg = {'id': uuidv4, \
+    'remarks': urllib.parse.unquote(matched.group('tag')),\
+    'server': matched.group('hostname'),\
+    'server_port': matched.group('port'),\
+    'password': info_sub[1],\
+    'method': info_sub[0],\
+    'plugin': '',\
+    'plugin_opts': ''}    
+    #print(cfg);
+    return cfg
+
+ss_cfg_list = []
+for s in ss_pure_urls:
+    ss_cfg_list.append(trans_uri2cfg(s))    
+cfg_json = json.dumps({'version': 1,'servers': ss_cfg_list})
+
 #format
 #sub_urls = [u.replace("&amp;", "&")  for u in urls ]
 #print(sub_urls)
-ss_pure_sub = base64.b64encode("\n".join(ss_pure_urls).encode("utf-8")).decode("utf-8");
+#ss_pure_sub = base64.b64encode("\n".join(ss_pure_urls).encode("utf-8")).decode("utf-8");
 ssr_pure_sub = base64.b64encode("\n".join(ssr_pure_urls).encode("utf-8")).decode("utf-8");
 #ss+ssr 
 ss_ssr_sub = base64.b64encode("\n".join(ss_ssr_urls).encode("utf-8")).decode("utf-8");
 #ss, ssr, v2
-v2_mix_sub = base64.b64encode("\n".join(ss_ssr_urls + v2_mix_urls)\
+v2_mix_sub = base64.b64encode("\n".join(ss_ssr_urls+ v2_mix_urls)\
 .encode("utf-8")).decode("utf-8");
-write_to_local("ss-pure.txt", ss_pure_sub)
+write_to_local("ss-cfg.json", cfg_json)
 write_to_local("ssr-pure.txt", ssr_pure_sub)
 write_to_local("ss-ssr.txt", ss_ssr_sub)
 write_to_local("v2-mix.txt", v2_mix_sub)

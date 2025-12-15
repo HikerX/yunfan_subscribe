@@ -123,8 +123,10 @@ def trans_uri2cfg(uri_ss_encoded):
 		'server_port': int(matched.group('port')),\
 		'password': info_sub[1],\
 		'method': info_sub[0],\
-		#如没有，则为“”， 而非null
-		'plugin': matched.group('plugin') or "",\
+		#仅测试支持 v2ray-plugin，而不支持 simple-obfs, 
+		#从观察来看，相关的配置参数本就一堆错误 如 obfs-host=e7b7ab7:102816
+		'plugin': matched.group('plugin') if re.match(r'v2ray-plugin', 
+		matched.group('plugin')) else "",\
 		#测试，是上游故意 把参数这么设置，还是意外弄错 obfs-hostwwx.gxn.de5.net
 		'plugin_opts': matched.group('plugin_opts') and re.sub(
 		r"host(?=[a-z0-1])", "host=", matched.group('plugin_opts'))  or ""\

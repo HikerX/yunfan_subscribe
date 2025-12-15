@@ -64,11 +64,13 @@ import urllib.parse
 IS_GITHUB_ACTION = bool(os.getenv("GITHUB_ACTION"));
 
 if IS_GITHUB_ACTION:
+	print("当前在Github Action环境")
 	url_ss_source = "https://raw.githubusercontent.com/wiki/Alvin9999/new-pac/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
 	url_v2ray_source = "https://raw.githubusercontent.com/wiki/Alvin9999/new-pac/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md"; 
 	#实测 虽然广告多，可用，速度高
 	ssv2_url_fn="https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
 else:
+	print("当前不在Github Action环境")
 	url_ss_source = "https://gitlab.com/zhifan999/fq/-/wikis/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
 	url_v2ray_source = "https://gitlab.com/zhifan999/fq/-/wikis/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
 	ssv2_url_fn="https://proxy.v2gh.com/https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
@@ -146,7 +148,8 @@ def main():
 	
 	print(f"读取指定文档, 当前北京时间为 {current_time}")
 	
-	#write_to_local("freenodes-uri.txt", fn_uri_ec)
+	write_to_local("ss免费账号.md", md_ss)
+	write_to_local("v2ray免费账号.md", md_v2ray)
 	#html = read_from_local("v2ray_demo.html");
 
 	#github
@@ -155,14 +158,11 @@ def main():
 	#alv_v2_mix = re.findall(r"(vmess://[A-Za-z0-9+/=]+|vless://|hysteria2://)", md_v2ray)
 	#同名称的md文件，在github中换行符号是\n ， 而在gitlab却是\r\n
 	#是作者同步的同一个文件吗，还是只名称一样？  
-	pattern_ss_md = r"(?<=```bash\r\n)[^`\r\n]+(?=\r\n```)" if \
-	url_ss_source.find("gitlab.com") else r"(?<=```bash\n)[^`\n]+(?=\n```)"
+	pattern_uri_md = r"(?<=```bash\n)[^`\n]+(?=\n```)" if \
+	IS_GITHUB_ACTION else r"(?<=```bash\r\n)[^`\r\n]+(?=\r\n```)"
 	
-	pattern_v2_md = r"(?<=```bash\r\n)[^`\r\n]+(?=\r\n```)" if \
-	url_ss_source.find("gitlab.com") else r"(?<=```bash\n)[^`\n]+(?=\n```)"
-	
-	alv_ss_ssr = re.findall(pattern_ss_md, md_ss);    
-	alv_v2_mix = re.findall(pattern_v2_md, md_v2ray);
+	alv_ss_ssr = re.findall(pattern_uri_md, md_ss);    
+	alv_v2_mix = re.findall(pattern_uri_md, md_v2ray);
 	
 	print(f"获得配置， ss(ssr) * {len(alv_ss_ssr)}, v2ray * {len(alv_v2_mix)}")
 	#finding pure ssr , filter

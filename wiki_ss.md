@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## 🚀 SS/SSR免费账号/节点（长期更新）
 
 ### 🌍 翻墙后推荐网站：
@@ -47,7 +46,7 @@
 
 ***
 
-**更新时间：** 北京时间2025年12月14日12点30分，解决SSR节点播放YouTube视频需要登录的问题
+**更新时间：** 北京时间2025年12月19日10点00分
 
 **⚠️注意：** SSR和SS是比较老的一种协议，可能安全性不强，建议更换为[免费v2ray账号](https://gitlab.com/zhifan999/fq/-/wikis/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 
@@ -88,13 +87,13 @@ ssr://c3NyMi43NjI5ODgueHl6OjMzMzM2OmF1dGhfY2hhaW5fYTpjaGFjaGEyMC1pZXRmOnRsczEuMl
 
 | 节点  | 地址         | 端口  | 密码             | 加密方式        |
 |-------|--------------|-------|------------------|-----------------|
-| ipv6 节点  | 2001:bc8:32d7:2013::10| 11111| dongtaiwang.com  | aes-256-gcm     |
+| ipv6 节点  | 2a14:7584:d009::a| 12345| dongtaiwang.com  | aes-256-gcm     |
 
 
 **SS链接**
 
 ```bash
-ss://YWVzLTI1Ni1nY206ZG9uZ3RhaXdhbmcuY29t@[2001:bc8:32d7:2013::10]:11111#SS%E8%8A%82%E7%82%B9-ipv6
+ss://YWVzLTI1Ni1nY206ZG9uZ3RhaXdhbmcuY29t@[2a14:7584:d009::a]:12345#SS%E8%8A%82%E7%82%B9-ipv6
 ```
 
 **如果想搭建自己的ss/ssr节点，参考[自建ss/ssr服务器教程](https://gitlab.com/zhifan999/fq/-/wikis/%E8%87%AA%E5%BB%BAss%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)。或者考虑[付费ss账号](https://gitlab.com/zhifan999/fq/-/wikis/V2free%E6%9C%BA%E5%9C%BA) 或搬瓦工付费ss/ssr账号-[Just My Socks](https://gitlab.com/zhifan999/fq/-/wikis/Just-My-Socks)。**
@@ -149,6 +148,3 @@ VPS推荐：
 ***
 
 如有问题，请发邮件至海外邮箱 [rebeccalane27@gmail.com](mailto:rebeccalane27@gmail.com)
-=======
-404: Not Found
->>>>>>> 67bb3855f52dca4f0b86bf3bb5fdfe548e752805

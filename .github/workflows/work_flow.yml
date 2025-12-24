@@ -1,4 +1,4 @@
-name: Auto Update Subscribe Resource
+name: Auto Update Subscribe
 
 on:
   schedule:

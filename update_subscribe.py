@@ -69,17 +69,17 @@ if IS_GITHUB_ACTION:
     url_ss_source = "https://raw.githubusercontent.com/wiki/Alvin9999-newpac/fanqiang/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
     url_v2ray_source = "https://raw.githubusercontent.com/wiki/Alvin9999-newpac/fanqiang/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
     #实测 虽然广告多，可用，速度高
-    ssv2_url_fn="https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
+    extra_source_url="https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
 else:
     print("当前不在Github Action环境")
     url_ss_source = "https://gitlab.com/zhifan999/fq/-/wikis/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
     url_v2ray_source = "https://gitlab.com/zhifan999/fq/-/wikis/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
-    ssv2_url_fn="https://proxy.v2gh.com/https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
+    extra_source_url="https://proxy.v2gh.com/https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
 
 pattern_ss = r"ss://(?P<userinfo>[\w=+-]+)@\[?(?P<hostname>[A-Za-z0-9-:.]+)\]?:(?P<port>[A-Za-z0-9:.]+)(/\?plugin=)?(?P<plugin>[^;]+)?;?(?P<plugin_opts>[^#]+)?#(?P<tag>.+)"
 
 #实测 uri多，但是基本都是无效
-#ssv2_url_fn = "https://proxy.v2gh.com/https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v2"
+#extra_source_url = "https://proxy.v2gh.com/https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v2"
 
 # ====== 获取当前北京时间 ======
 def get_current_time():
@@ -165,37 +165,37 @@ def main():
     alv_ss_iter = filter( lambda s : re.match(r"ss://", s), alv_ss_ssr)
     alv_ssr_iter = filter( lambda s : re.match(r"ssr://", s), alv_ss_ssr)
     
-    alv_ss_uris = [ ss for ss in alv_ss_iter];
     #ssr 添加 group属性
     alv_ssr_uris = [ add_ssr_group(ssr) for ssr in alv_ssr_iter];
     #将 ss-uri 转换成 json 格式 config    
     ss_cfg_list = []
     for s in alv_ss_iter:
-        ss_cfg_list.append(docode_uri2cfg(s))       
-
+        ss_cfg_list.append(docode_uri2cfg(s))
     #增加更多ss uri, 数量多，但质量不高，且有的连格式都不合规，严格匹配过滤
-    fn_uri_ec = requests.get(ssv2_url_fn).text;
-    while len(fn_uri_ec) % 4 != 0:
-        fn_uri_ec += "=";
-    fn_ss_text = base64.urlsafe_b64decode(fn_uri_ec.encode("utf-8")
+    print(f"\n读取额外订阅，查找ss uri.")
+    extra_uri_b64 = requests.get(extra_source_url).text;
+    while len(extra_uri_b64) % 4 != 0:
+        extra_uri_b64 += "=";
+    extra_uri_plain = base64.urlsafe_b64decode(extra_uri_b64.encode("utf-8")
     ).decode("utf-8")
-
-    fn_ss_list = fn_ss_text.split("\n");     
-    fn_ss_iter = filter(lambda s : re.match(pattern_ss, s), fn_ss_list)       
-    for s in fn_ss_iter:
+    extra_uri_list = extra_uri_plain.split("\n");     
+    extra_ss_iter = filter(lambda s : re.match(pattern_ss, s), extra_uri_list);    
+    for s in extra_ss_iter:
         #print(s);
         ss_cfg_list.append(docode_uri2cfg(s))
     ss_json = json.dumps({'version': 1,'servers': ss_cfg_list})
     print(f"全部 ss * {len(ss_cfg_list)}") 
     
     #format
-    ss_sub = base64.urlsafe_b64encode("\n".join(alv_ss_uris + 
-    fn_ss_list).encode("utf-8")).decode("utf-8");
+    ss_sub = base64.urlsafe_b64encode("\n".join( list(alv_ss_iter) + 
+    list(extra_ss_iter)).encode("utf-8")).decode("utf-8");
     ssr_sub = base64.urlsafe_b64encode("\n".join(alv_ssr_uris).encode(
     "utf-8")).decode("utf-8");
     #ss, ssr, v2
     v2_mix_sub = base64.urlsafe_b64encode("\n".join(alv_ss_ssr + 
     alv_v2_mix).encode("utf-8")).decode("utf-8");
+    
+    print(f"\n存储到文件.")
     write_to_local("ss-pure.txt", ss_sub); #用于v2测速
     write_to_local("ss-cfg.json", ss_json)
     write_to_local("ssr-pure.txt", ssr_sub)

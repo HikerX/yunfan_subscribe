@@ -2,7 +2,7 @@ name: Auto Update Subscribe Resource
 
 on:
   schedule:
-    - cron: '45 * * * *'  #UTC0 间隔1消失执行一次
+    - cron: '45 * * * *'  #UTC0, GMT+8 8:00, 每个小时第45分钟执行一次
   workflow_dispatch:       # 支持手动触发
 
 permissions:

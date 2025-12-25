@@ -62,10 +62,11 @@
 
 | 备用网址 | 描述 |
 |---------------------|-------------------------------------------|
-| [https://2github.com/Alvin9999-newpac/fanqiang/wiki/ss免费账号](https://2github.com/Alvin9999-newpac/fanqiang/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7) | GitHub镜像，仅限大陆地区访问 |
-| [https://gitlab.com/zhifan999/fq/-/wikis/ss免费账号](https://gitlab.com/zhifan999/fq/-/wikis/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7) | GitLab 网站，建议保存 |
-| [https://jj5.xyz/ss免费账号](https://jj5.xyz/ss免费账号)         | Free Air，仅限IPV6网络访问|    
-| [https://s3.dualstack.us-west-2.amazonaws.com/zhifan2/ss.html](https://s3.dualstack.us-west-2.amazonaws.com/zhifan2/ss.html) |Free Air  |
+| [https://alvin9999.com/ss免费账号](https://alvin9999.com/ss免费账号) |Free Air官网，长久地址，建议保存，如果被墙请翻墙打开|  
+| [https://s3.dualstack.us-west-2.amazonaws.com/zhifan2/ss.html](https://s3.dualstack.us-west-2.amazonaws.com/zhifan2/ss.html)         | Free Air，建议保存|    
+| [https://jj5.xyz/ss免费账号](https://jj5.xyz/ss免费账号)         | Free Air，仅限IPV6网络访问|     
+| [https://gitlab.com/zhifan999/fq/-/wikis/ss免费账号](https://gitlab.com/zhifan999/fq/-/wikis/ss免费账号)         | GitLab 网站，建议保存                      | 
+| [https://2github.com/Alvin9999-newpac/fanqiang/wiki/ss免费账号](https://2github.com/Alvin9999-newpac/fanqiang/wiki/ss免费账号) | GitHub镜像，仅限大陆地区访问 |  
 
 ***
 
@@ -115,8 +116,7 @@ VPS推荐：
 
 [Vultr](https://www.vultr.com/?ref=7048874) （vps最低2.5美元/月，vultr全球32个服务器位置可选，包括洛杉矶、韩国、新加坡、日本、德国、荷兰等。支持支付宝和paypal付款。）
 
-<a href="https://www.vultr.com/?ref=7048874"><img src="https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/vultr_728x90.png" width="728" height="90"></a>
-
+<a href="https://www.vultr.com/?ref=7048874"><img src="https://cdn.jsdelivr.net/gh/Alvin9999-newpac/pac2/softimag/vultr_728x90.png" width="728" height="90"></a>
 
 ***
 

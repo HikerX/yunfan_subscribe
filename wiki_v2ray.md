@@ -48,7 +48,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年1月2日11点30分，服务器维护，需要几个小时才能恢复
+**更新时间：** 北京时间2026年1月2日13点30分，更新节点1，其它节点的服务器维护，需要几个小时才能恢复
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -78,25 +78,26 @@
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 62.210.8.152|
-| Port（端口）       | 18877|
-| UUID（用户ID）     | 3fb38b37-c636-44d3-ab0c-897fab438bf1 |
+| Address（地址）    | 157.254.223.24|
+| Port（端口）       | 12008|
+| UUID（用户ID）     | ed2283e4-d134-4c40-b559-d992d4d7162b |
 | encryption（加密方式）| none                           |
 | network（传输协议） | xhttp                               |
 | TLS（传输层安全）   | reality                           |
-| path（路径）   | /github.com/Alvin9999                           |
-| SNI (serverName)   | mxj.myanimelist.net             |
+| path（路径）   |     /alvin9999.com                  |
+| SNI (serverName)   | www.lovelive-anime.jp        |
 | Fingerprint （指纹）| chrome                            |
-| Public key （公钥） | DZj1qrLAm6EJfPkVRPpSCgoQN8sM8Rbio0jpsS1A3FM|
-| Shortld            | 288132e297984d34|
+| Public key （公钥） | ntiUM671FfaRJhQPvMCGXvb7G1N_bn9whxxuCZhctwo|
+| Shortld            | 6a29362fb7243ef3|
 | SpiderX            | /|
 
 
 **节点1（vless）一键导入链接**
 
 ```bash
-vless://3fb38b37-c636-44d3-ab0c-897fab438bf1@62.210.8.152:18877?encryption=none&security=reality&sni=mxj.myanimelist.net&fp=chrome&pbk=DZj1qrLAm6EJfPkVRPpSCgoQN8sM8Rbio0jpsS1A3FM&sid=288132e297984d34&spx=%2F&type=xhttp&path=%2Fgithub.com%2FAlvin9999#VLESS%E8%8A%82%E7%82%B91-xhttp-reality
+vless://ed2283e4-d134-4c40-b559-d992d4d7162b@157.254.223.24:12008?encryption=none&security=reality&sni=www.lovelive-anime.jp&fp=chrome&pbk=ntiUM671FfaRJhQPvMCGXvb7G1N_bn9whxxuCZhctwo&sid=6a29362fb7243ef3&spx=%2F&type=xhttp&path=%2Falvin9999.com#VLESS%E8%8A%82%E7%82%B91-xhttp-reality
 ```
+
 
 **🚀 节点2（vmess）**
 

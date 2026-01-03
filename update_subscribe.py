@@ -67,13 +67,13 @@ if IS_GITHUB_ACTION:
     print("当前在Github Action环境")
     #251224新仓库链接
     url_ss_source = "https://raw.githubusercontent.com/wiki/Alvin9999-newpac/fanqiang/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
-    url_v2ray_source = "https://raw.githubusercontent.com/wiki/Alvin9999-newpac/fanqiang/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
+    url_v2_source = "https://raw.githubusercontent.com/wiki/Alvin9999-newpac/fanqiang/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
     #实测 虽然广告多，可用，速度高
     extra_source_url="https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
 else:
     print("当前不在Github Action环境")
     url_ss_source = "https://gitlab.com/zhifan999/fq/-/wikis/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
-    url_v2ray_source = "https://gitlab.com/zhifan999/fq/-/wikis/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
+    url_v2_source = "https://gitlab.com/zhifan999/fq/-/wikis/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
     extra_source_url="https://proxy.v2gh.com/https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
 
 pattern_ss = r"ss://(?P<userinfo>[\w=+-]+)@\[?(?P<hostname>[A-Za-z0-9-:.]+)\]?:(?P<port>[A-Za-z0-9:.]+)(/\?plugin=)?(?P<plugin>[^;]+)?;?(?P<plugin_opts>[^#]+)?#(?P<tag>.+)"
@@ -146,24 +146,24 @@ def add_ssr_group(ssr_url):
 def main():
     print(f"读取指定md文档, 当前北京时间为 {get_current_time()}")
     md_ss = requests.get(url_ss_source).text;
-    md_v2ray = requests.get(url_v2ray_source).text; 
+    md_v2 = requests.get(url_v2_source).text; 
     write_to_local("wiki_ss.md", md_ss);
-    write_to_local("wiki_v2ray.md", md_v2ray);
+    write_to_local("wiki_v2.md", md_v2);
     #html = read_from_local("v2ray_demo.html");
     #github
     #ss://YWVzLTI1Ni1nY206ZG9uZ3RhaXdhbmcuY29t@[2001:bc8:32d7:2013::10]:11111#SS%E8%8A%82%E7%82%B9-ipv6
-    #alv_ss_ssr = re.findall(r"(ss://[A-Za-z0-9+-/=_@\[\]:#%]+|ssr://[A-Za-z0-9+/=]+)", md_ss);    
-    #alv_v2_mix = re.findall(r"(vmess://[A-Za-z0-9+/=]+|vless://|hysteria2://)", md_v2ray)
+    #alv_ss_list = re.findall(r"(ss://[A-Za-z0-9+-/=_@\[\]:#%]+|ssr://[A-Za-z0-9+/=]+)", md_ss);    
+    #alv_v2_list = re.findall(r"(vmess://[A-Za-z0-9+/=]+|vless://|hysteria2://)", md_v2)
     #同名称的md文件，在github中换行符号是\n ， 而在gitlab却是\r\n
     #是作者同步的同一个文件吗，还是只名称一样？ 
     pattern_uri_md = r"(?<=```bash\n)[^`\n]+(?=\n```\n)" if \
     IS_GITHUB_ACTION else r"(?<=```bash\r\n)[^`\r\n]+(?=\r\n```\r\n)";
-    alv_ss_ssr = re.findall(pattern_uri_md, md_ss);
-    alv_v2_mix = re.findall(pattern_uri_md, md_v2ray);        
-    print(f"获得配置  ss(ssr) * {len(alv_ss_ssr)}, v2ray * {len(alv_v2_mix)}")
+    alv_ss_list = re.findall(pattern_uri_md, md_ss);
+    alv_v2_list = re.findall(pattern_uri_md, md_v2);        
+    print(f"获得配置  ss(ssr) * {len(alv_ss_list)}, v2ray * {len(alv_v2_list)}")
     #来源可靠，简单匹配
-    alv_ss_iter = filter( lambda s : re.match(r"ss://", s), alv_ss_ssr)
-    alv_ssr_iter = filter( lambda s : re.match(r"ssr://", s), alv_ss_ssr)
+    alv_ss_iter = filter( lambda s : re.match(r"ss://", s), alv_ss_list)
+    alv_ssr_iter = filter( lambda s : re.match(r"ssr://", s), alv_ss_list)
     #ssr 添加 group属性
     alv_ssr_uris = [ add_ssr_group(ssr) for ssr in alv_ssr_iter];
     #将 ss-uri 转换成 json 格式 config    
@@ -190,13 +190,18 @@ def main():
     ssr_sub = base64.urlsafe_b64encode("\n".join(alv_ssr_uris).encode(
     "utf-8")).decode("utf-8");
     #ss, ssr, v2
-    v2_mix_sub = base64.urlsafe_b64encode("\n".join(alv_v2_mix + 
-    alv_ss_ssr + extra_ss_list).encode("utf-8")).decode("utf-8");
+    v2_mix_sub = base64.urlsafe_b64encode("\n".join(alv_v2_list + 
+    alv_ss_list + extra_ss_list).encode("utf-8")).decode("utf-8");
     
+    v2_alv_sub = base64.urlsafe_b64encode("\n".join(alv_v2_list
+    ).encode("utf-8")).decode("utf-8");
+        
     print(f"\n存储到文件.")
     write_to_local("ss-cfg.json", ss_json)
     write_to_local("ssr-pure.txt", ssr_sub)
     write_to_local("v2-mix.txt", v2_mix_sub)    
+    write_to_local("v2-alv.txt", v2_mix_sub)
+    
     print(f"更新完成, 当前北京时间为 {get_current_time()}")
 
 if __name__ == "__main__":

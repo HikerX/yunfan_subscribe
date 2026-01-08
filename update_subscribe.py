@@ -1,4 +1,4 @@
-#!/bin/python3
+##!/bin/python3
 
 '''
 目标
@@ -27,7 +27,10 @@ ssr作者已经删库了，不再更新了。ss虽有更新，但不频频繁。
 采用的策略是，把 ss 和 ssr当主用, 而把v2ray当备用。
 
 shadowsocks 订阅，有官方文档可查。
-#https://shadowsocks.org/doc/sip008.html
+uri
+https://shadowsocks.org/doc/sip002.html
+config.json
+https://shadowsocks.org/doc/sip008.html
 
 ssr 订阅，难以查看文档。但是，在windows版本ssr程序上，自带了
 一个指向github订阅网址。本身已经失效了，但是根据地址路径，搜索到github山第三方备份。
@@ -76,7 +79,8 @@ else:
     url_v2_source = "https://gitlab.com/zhifan999/fq/-/wikis/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
     extra_source_url="https://proxy.v2gh.com/https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
 
-pattern_ss = r"ss://(?P<userinfo>[\w=+-]+)@\[?(?P<hostname>[A-Za-z0-9-:.]+)\]?:(?P<port>[A-Za-z0-9:.]+)(/\?plugin=)?(?P<plugin>[^;]+)?;?(?P<plugin_opts>[^#]+)?#(?P<tag>.+)"
+pattern_ss = r"ss://(?P<userinfo>[\w=+-]+)@\[?(?P<hostname>[A-Za-z0-9-:.]+)\]?:(?P<port>[0-9]+)"\
+r"/?(\?plugin=(?P<plugin>[^;]+);?(?P<plugin_opts>[^#]+)?)?#(?P<tag>.+)"
 
 #实测 uri多，但是基本都是无效
 #extra_source_url = "https://proxy.v2gh.com/https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v2"
@@ -113,21 +117,21 @@ def docode_uri2cfg(uri_ss):
     info_sub = info.split(":");
     uuidv4 = str(uuid.uuid4())
     #print(uuidv4)
-    if  matched.group('plugin') :
-        print("%s\n🔩插件 %s, %s" % (uri_ss, matched.group('plugin'), 
+    if  matched.group('plugin') or matched.group('plugin_opts'):
+        print("排除：%s\n原因：🔩 plugin=%s, plugin_opts=%s" % (uri_ss, matched.group('plugin'), 
         matched.group('plugin_opts')))
-    cfg = {\
-        'id': uuidv4, \
-        'remarks': urllib.parse.unquote(matched.group('tag')),\
-        'server': matched.group('hostname'),\
+    cfg = {
+        'id': uuidv4,
+        'remarks': urllib.parse.unquote(matched.group('tag')),
+        'server': matched.group('hostname'),
         #为了兼容ss-rust, 这里要转换成数字，而非字符
-        'server_port': int(matched.group('port')),\
-        'password': info_sub[1],\
-        'method': info_sub[0],\
+        'server_port': int(matched.group('port')),
+        'password': info_sub[1],
+        'method': info_sub[0],
         #如没有，则为“”， 而非null
-        'plugin': matched.group('plugin') or "",\
+        'plugin': matched.group('plugin'),
         #测试，是上游故意 把参数这么设置，还是意外弄错 obfs-hostwwx.gxn.de5.net
-        'plugin_opts': matched.group('plugin_opts') or ""\
+        'plugin_opts': matched.group('plugin_opts')
     }    
     #print(cfg);
     return cfg
@@ -167,12 +171,13 @@ def main():
     #ssr 添加 group属性
     alv_ssr_uris = [ add_ssr_group(ssr) for ssr in alv_ssr_iter];
     #将 ss-uri 转换成 json 格式 config    
-    ss_cfg_list = []
-    for s in alv_ss_iter:
-        ss_cfg_list.append(docode_uri2cfg(s))
+    ss_cfg_list = [docode_uri2cfg(u) for u in alv_ss_iter]    
+    #for s in alv_ss_iter:
+        #ss_cfg_list.extend()
     #增加更多ss uri, 数量多，但质量不高，且有的连格式都不合规，严格匹配过滤
     print(f"\n读取额外订阅，查找ss uri.")
     extra_uri_b64 = requests.get(extra_source_url).text;
+    write_to_local("extra_uri.txt", md_v2);
     while len(extra_uri_b64) % 4 != 0:
         extra_uri_b64 += "=";
     extra_uri_plain = base64.urlsafe_b64decode(extra_uri_b64.encode("utf-8")
@@ -180,12 +185,10 @@ def main():
     extra_uri_list = extra_uri_plain.split("\n");     
     extra_ss_iter = filter(lambda s : re.match(pattern_ss, s), extra_uri_list);    
     extra_ss_list = list(extra_ss_iter); #i
-    for s in extra_ss_list:
-        #print(s);
-        ss_cfg_list.append(docode_uri2cfg(s))
+    without_plugin_list = [ c for u in extra_ss_list if (c:=docode_uri2cfg(u)).get("plugin") is None]
+    ss_cfg_list.extend(without_plugin_list)    
     ss_json = json.dumps({'version': 1,'servers': ss_cfg_list})
-    print(f"全部 ss * {len(ss_cfg_list)}") 
-    
+    print(f"全部 ss * {len(ss_cfg_list)}")    
     #format
     ssr_sub = base64.urlsafe_b64encode("\n".join(alv_ssr_uris).encode(
     "utf-8")).decode("utf-8");

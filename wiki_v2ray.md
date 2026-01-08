@@ -24,8 +24,6 @@
 **📺 视频推荐**
 
 - [纪录片《江油事件》](https://www.youtube.com/watch?v=7qjZ89NSwYs)
-- [EVP灵界追凶成真，于朦胧三退后登临仙界](https://www.youtube.com/watch?v=o14LuCbHlYY)
-- [于朦胧托梦，EVP灵界低语，跨海死亡威胁！修行者灵界所见，黑龙吐黑气笼罩中国](https://www.youtube.com/watch?v=WUNiyUFSBkk)
 - [1989六四事件:广场备忘录-BBC News 中文](https://www.youtube.com/watch?v=ExqqdUXXdgA&ab_channel=BBCNews%E4%B8%AD%E6%96%87)
 - [第51届哥伦布国际电影电视节荣誉奖——《伪火》](http://cn.ntdtv.com/gb/2014/01/07/a24016.html) 
 - [关于台湾的5大真相](https://www.youtube.com/watch?v=O2hbHbdYG2w&ab_channel=Leonard)

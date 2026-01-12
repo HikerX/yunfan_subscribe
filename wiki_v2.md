@@ -46,7 +46,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年1月5日22点30分，更新节点2
+**更新时间：** 北京时间2026年1月12日20点30分，更新节点2
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -103,9 +103,9 @@ vless://ed2283e4-d134-4c40-b559-d992d4d7162b@157.254.223.24:12008?encryption=non
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 2a14:7583:29de::a|
-| Port（端口）       | 12345|
-| UUID（用户ID）     | 69c613e6-7d91-45de-a465-b4132b6d69ec |
+| Address（地址）    | 2a14:7584:d0a2::a|
+| Port（端口）       | 23456|
+| UUID（用户ID）     | bd48e0ac-e90e-4451-a4f2-abf061cfb890 |
 | alterid（额外ID）     | 0                 |
 | security（加密方式）| auto                           |
 | network（传输协议） | ws                               |
@@ -118,7 +118,7 @@ vless://ed2283e4-d134-4c40-b559-d992d4d7162b@157.254.223.24:12008?encryption=non
 **节点2（vmess）一键导入链接**
 
 ```bash
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlZNRVNT6IqC54K5Mi1pcHY2IiwNCiAgImFkZCI6ICIyYTE0Ojc1ODM6MjlkZTo6YSIsDQogICJwb3J0IjogIjEyMzQ1IiwNCiAgImlkIjogIjY5YzYxM2U2LTdkOTEtNDVkZS1hNDY1LWI0MTMyYjZkNjllYyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAid3d3LmJpbmcuY29tIiwNCiAgInBhdGgiOiAiL2FsdmluOTk5OS5jb20iLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlZNRVNT6IqC54K5Mi1pcHY2IiwNCiAgImFkZCI6ICIyYTE0Ojc1ODQ6ZDBhMjo6YSIsDQogICJwb3J0IjogIjIzNDU2IiwNCiAgImlkIjogImJkNDhlMGFjLWU5MGUtNDQ1MS1hNGYyLWFiZjA2MWNmYjg5MCIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAid3d3LmJpbmcuY29tIiwNCiAgInBhdGgiOiAiL2FsdmluOTk5OS5jb20iLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
 ```
 
 **🚀 节点3（hysteria2）**

@@ -46,7 +46,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年1月15日1点00分，更新节点3
+**更新时间：** 北京时间2026年1月16日1点30分，更新节点1
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -76,24 +76,24 @@
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 157.254.223.24|
-| Port（端口）       | 12008|
-| UUID（用户ID）     | ed2283e4-d134-4c40-b559-d992d4d7162b |
+| Address（地址）    | 89.144.35.225|
+| Port（端口）       | 11335|
+| UUID（用户ID）     | f1539886-009b-493d-8ef6-4902a2451668 |
 | encryption（加密方式）| none                           |
 | network（传输协议） | xhttp                               |
 | TLS（传输层安全）   | reality                           |
 | path（路径）   |     /alvin9999.com                  |
-| SNI (serverName)   | www.lovelive-anime.jp        |
+| SNI (serverName)   | www.j-wave.co.jp       |
 | Fingerprint （指纹）| chrome                            |
-| Public key （公钥） | ntiUM671FfaRJhQPvMCGXvb7G1N_bn9whxxuCZhctwo|
-| Shortld            | 6a29362fb7243ef3|
+| Public key （公钥） | n9g9MHHEEg3wXVX7vUCJ44KglxLd292rNT424FCd6Vo|
+| Shortld            | 27bb577320995e96|
 | SpiderX            | /|
 
 
 **节点1（vless）一键导入链接**
 
 ```bash
-vless://ed2283e4-d134-4c40-b559-d992d4d7162b@157.254.223.24:12008?encryption=none&security=reality&sni=www.lovelive-anime.jp&fp=chrome&pbk=ntiUM671FfaRJhQPvMCGXvb7G1N_bn9whxxuCZhctwo&sid=6a29362fb7243ef3&spx=%2F&type=xhttp&path=%2Falvin9999.com#VLESS%E8%8A%82%E7%82%B91-xhttp-reality
+vless://f1539886-009b-493d-8ef6-4902a2451668@89.144.35.225:11335?encryption=none&security=reality&sni=www.j-wave.co.jp&fp=chrome&pbk=n9g9MHHEEg3wXVX7vUCJ44KglxLd292rNT424FCd6Vo&sid=27bb577320995e96&spx=%2F&type=xhttp&path=%2Falvin9999.com#VLESS%E8%8A%82%E7%82%B91-xhttp-reality
 ```
 
 

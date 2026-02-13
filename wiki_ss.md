@@ -45,6 +45,8 @@
 
 ***
 
+### 祝大家新春快乐！
+
 **更新时间：** 北京时间2026年2月7日11点30分更新SS节点
 
 **⚠️注意：** SSR和SS是比较老的一种协议，可能安全性不强，建议更换为[免费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)

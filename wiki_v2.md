@@ -19,7 +19,8 @@
 
 **▶️ YouTube频道推荐**
 
-[文昭谈古论今](https://www.youtube.com/@wenzhaoofficial/videos) | [时事金扫描](https://www.youtube.com/@jinsaomiao/videos)  | [新唐人电视台](https://www.youtube.com/@NTDCHINESE/videos)  | [天亮论政](https://www.youtube.com/@TianliangZhang/streams)   | [新闻最嘲点姜光宇](https://www.youtube.com/@MrFunnyNewsJGY/videos)     |   [Leonard](https://www.youtube.com/channel/UC1mx_wcSHtfpLk5N_zY0TRg/videos)   |   [人民报](https://www.youtube.com/@renminbao1/videos)  | [文昭思绪飞扬](https://www.youtube.com/channel/UCTu_hTaVf3DJMpMIyOAq2Ew/videos)  | [信不信由你](https://www.youtube.com/@xbxynfun/videos) | [晨曦晓屋](https://www.youtube.com/@chenxixiaowu/videos)
+[文昭谈古论今](https://www.youtube.com/@wenzhaoofficial/videos) | [时事金扫描](https://www.youtube.com/@時事金掃描/videos)  | [新唐人电视台](https://www.youtube.com/@NTDCHINESE/videos)  | [天亮论政](https://www.youtube.com/@TianliangZhang/streams)   | [新闻最嘲点姜光宇](https://www.youtube.com/@MrFunnyNewsJGY/videos)     |   [Leonard](https://www.youtube.com/channel/UC1mx_wcSHtfpLk5N_zY0TRg/videos)   |   [人民报](https://www.youtube.com/@人民報renminbao/videos)  | [文昭思绪飞扬](https://www.youtube.com/channel/UCTu_hTaVf3DJMpMIyOAq2Ew/videos)  | [信不信由你](https://www.youtube.com/@xbxynfun/videos) | [晨曦晓屋](https://www.youtube.com/@chenxixiaowu/videos) 
+
 
 **📺 视频推荐**
 

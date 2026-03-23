@@ -26,6 +26,8 @@
 - [1989六四事件:广场备忘录-BBC News 中文](https://www.youtube.com/watch?v=ExqqdUXXdgA&ab_channel=BBCNews%E4%B8%AD%E6%96%87)
 - [第51届哥伦布国际电影电视节荣誉奖——《伪火》](http://cn.ntdtv.com/gb/2014/01/07/a24016.html) 
 - [关于台湾的5大真相](https://www.youtube.com/watch?v=O2hbHbdYG2w&ab_channel=Leonard)
+- [江泽民留下的黑金帝国！闷声30年发了多大财？](https://www.youtube.com/watch?v=25QkHv4kYx4)
+- [中国第一家族邓小平的后人有多富？](https://www.youtube.com/watch?v=zK61Rb7Jftc)
 - [《九评》历史真相系列纪录片](https://www.ntdtv.com/gb/2023/02/04/a103641795.html)
 - [北宋预言《梅花诗》](https://www.ganjingworld.com/zh-CN/video/1h1avcli4jj3fuuswOXnh1ULh1pc1c)
 - [“三阿哥”的戏剧人生（上）](https://www.ntdtv.com/gb/2021/02/12/a103052600.html)

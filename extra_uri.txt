@@ -48,7 +48,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年3月24日0点30分更新节点1
+**更新时间：** 北京时间2026年3月24日9点30分更新节点2和3
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -104,9 +104,10 @@ vless://8b66e552-e89d-4c4f-bb5a-e3d37bf151b8@111.243.102.83:34500?encryption=non
 
 使用IPv6节点，本地网络需要开启IPv6支持。手机的电话卡流量通常自带IPv6网络，可以使用IPv6地址。手机可以通过热点功能将IPv6网络共享给电脑，这样电脑也能连接到IPv6网络。如果希望电脑自动启用宽带的IPv6网络，请参考相关的[IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
+
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 2a14:7584:d0a2::a|
+| Address（地址）    | 2001:bc8:32d7:225::1|
 | Port（端口）       | 23456|
 | UUID（用户ID）     | bd48e0ac-e90e-4451-a4f2-abf061cfb890 |
 | alterid（额外ID）     | 0                 |
@@ -121,8 +122,9 @@ vless://8b66e552-e89d-4c4f-bb5a-e3d37bf151b8@111.243.102.83:34500?encryption=non
 **节点2（vmess）一键导入链接**
 
 ```bash
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlZNRVNT6IqC54K5Mi1pcHY2IiwNCiAgImFkZCI6ICIyYTE0Ojc1ODQ6ZDBhMjo6YSIsDQogICJwb3J0IjogIjIzNDU2IiwNCiAgImlkIjogImJkNDhlMGFjLWU5MGUtNDQ1MS1hNGYyLWFiZjA2MWNmYjg5MCIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAid3d3LmJpbmcuY29tIiwNCiAgInBhdGgiOiAiL2FsdmluOTk5OS5jb20iLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlZNRVNT6IqC54K5Mi1pcHY2IiwNCiAgImFkZCI6ICIyMDAxOmJjODozMmQ3OjIyNTo6MSIsDQogICJwb3J0IjogIjIzNDU2IiwNCiAgImlkIjogImJkNDhlMGFjLWU5MGUtNDQ1MS1hNGYyLWFiZjA2MWNmYjg5MCIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAid3d3LmJpbmcuY29tIiwNCiAgInBhdGgiOiAiL2FsdmluOTk5OS5jb20iLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
 ```
+
 
 **🚀 节点3（hysteria2）**
 
@@ -134,11 +136,11 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlZNRVNT6IqC54K5Mi1pcHY2IiwNCiAgImFkZCI6
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 2a14:7583:295c::a|
-| Port（端口）       | 11130|
+| Address（地址）    | 2604:6600::5cb|
+| Port（端口）       | 22288|
 | Password（密码）     | dongtaiwang.com |
 | TLS（传输层安全）   | tls                           |
-| SNI (serverName)   | apple.com               |
+| SNI (serverName)   | www.microsoft.com               |
 | Alpn | h3                            |
 | AllowInsecure （跳过证书验证） | true|
 
@@ -147,7 +149,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlZNRVNT6IqC54K5Mi1pcHY2IiwNCiAgImFkZCI6
 **节点3（hysteria2）一键导入链接**
 
 ```bash
-hysteria2://dongtaiwang.com@[2a14:7583:295c::a]:11130?sni=www.microsoft.com&insecure=1#Hysteria2%E8%8A%82%E7%82%B93-ipv6
+hysteria2://dongtaiwang.com@[2604:6600::5cb]:22288?sni=www.microsoft.com&insecure=1#Hysteria2%E8%8A%82%E7%82%B93-ipv6
 ```
 
 **如果想搭建自己的v2ray节点，参考[自建v2ray服务器教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) （共18个节点） 。也可以考虑[付费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/V2free%E6%9C%BA%E5%9C%BA) ,2020年开始已稳定运行5年。**

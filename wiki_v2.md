@@ -48,7 +48,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年3月24日9点30分更新节点2和3
+**更新时间：** 北京时间2026年3月24日22点30分更新节点1
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -79,24 +79,24 @@
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 111.243.102.83|
-| Port（端口）       | 34500|
-| UUID（用户ID）     | 8b66e552-e89d-4c4f-bb5a-e3d37bf151b8 |
+| Address（地址）    | 157.254.223.64|
+| Port（端口）       | 23000|
+| UUID（用户ID）     | bcb13ecb-4f63-4257-ae01-ec5aeaa613a5 |
 | encryption（加密方式）| none                           |
 | network（传输协议） | xhttp                               |
 | TLS（传输层安全）   | reality                           |
-| path（路径）   |     /ZTwhzkrWeLnk5ARp8SsoVlVMGn6cSDq8CElbAniRQ9dMR                 |
-| SNI (serverName)   | www.lovelive-anime.jp    |
+| path（路径）   |     /alvin9999.com               |
+| SNI (serverName)   | mxj.myanimelist.net    |
 | Fingerprint （指纹）| chrome                            |
-| Public key （公钥） | Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ|
-| Shortld            | 3a1381d1b2cc9e19|
+| Public key （公钥） | dJFLqPCinyadJxJk7zA_DwBOEAvexvm7AZT2Pw84_EY|
+| Shortld            | 955275866feece09|
 | SpiderX            | /|
 
 
 **节点1（vless）一键导入链接**
 
 ```bash
-vless://8b66e552-e89d-4c4f-bb5a-e3d37bf151b8@111.243.102.83:34500?encryption=none&security=reality&sni=www.lovelive-anime.jp &fp=chrome&pbk=Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ&sid=3a1381d1b2cc9e19&spx=%2F&type=xhttp&path=%2FZTwhzkrWeLnk5ARp8SsoVlVMGn6cSDq8CElbAniRQ9dMR#VLESS%E8%8A%82%E7%82%B91-xhttp-reality
+vless://bcb13ecb-4f63-4257-ae01-ec5aeaa613a5@157.254.223.64:23000?encryption=none&security=reality&sni=mxj.myanimelist.net&fp=chrome&pbk=dJFLqPCinyadJxJk7zA_DwBOEAvexvm7AZT2Pw84_EY&sid=955275866feece09&spx=%2F&type=xhttp&path=%2Falvin9999.com#VLESS%E8%8A%82%E7%82%B91-xhttp-reality
 ```
 
 

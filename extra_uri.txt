@@ -48,7 +48,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年3月25日22点30分更新节点3
+**更新时间：** 北京时间2026年3月25日22点30分更新节点1和3
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -79,24 +79,24 @@
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 111.243.110.11|
-| Port（端口）       | 18255|
-| UUID（用户ID）     | 58698812-5016-458c-9b21-6e33d575f84d |
+| Address（地址）    | 195.154.56.101 |
+| Port（端口）       | 32202|
+| UUID（用户ID）     | 28148be2-61a7-4f36-8adb-030cc9f82bd0  |
 | encryption（加密方式）| none                           |
 | network（传输协议） | xhttp                               |
 | TLS（传输层安全）   | reality                           |
-| path（路径）   |     /z2zMtbJD              |
-| SNI (serverName)   | www.cloudflare.com   |
+| path（路径）   |     /G3EEoH63       |
+| SNI (serverName)   | www.amazon.com  |
 | Fingerprint （指纹）| chrome                            |
-| Public key （公钥） | z1_FVLAxN66t1373faq2D-BV8B7CyILrwc0vMiYw9Cc|
-| Shortld            | d3c7911a|
-| SpiderX            | /|
+| Public key （公钥） | bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc |
+| Shortld            | f57d8f26|
+| SpiderX            | |
 
 
 **节点1（vless）一键导入链接**
 
 ```bash
-vless://58698812-5016-458c-9b21-6e33d575f84d@111.243.110.11:18255?encryption=none&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=z1_FVLAxN66t1373faq2D-BV8B7CyILrwc0vMiYw9Cc&sid=d3c7911a&type=xhttp&path=%2Fz2zMtbJD#VLESS-xhttp-Reality-Vision
+vless://28148be2-61a7-4f36-8adb-030cc9f82bd0@195.154.56.101:32202?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc&sid=f57d8f26&type=xhttp&path=%2FG3EEoH63#VLESS-xhttp-Reality-Vision
 ```
 
 

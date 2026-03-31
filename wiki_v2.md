@@ -48,7 +48,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年3月25日22点30分更新节点1和3
+**更新时间：** 北京时间2026年3月31日21点00分更新节点1和3
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -79,7 +79,7 @@
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 195.154.56.101 |
+| Address（地址）    | 62.210.24.143|
 | Port（端口）       | 32202|
 | UUID（用户ID）     | 28148be2-61a7-4f36-8adb-030cc9f82bd0  |
 | encryption（加密方式）| none                           |
@@ -96,7 +96,7 @@
 **节点1（vless）一键导入链接**
 
 ```bash
-vless://28148be2-61a7-4f36-8adb-030cc9f82bd0@195.154.56.101:32202?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc&sid=f57d8f26&type=xhttp&path=%2FG3EEoH63#VLESS-xhttp-Reality-Vision
+vless://28148be2-61a7-4f36-8adb-030cc9f82bd0@62.210.24.143:32202?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc&sid=f57d8f26&type=xhttp&path=%2FG3EEoH63#VLESS-xhttp-Reality-Vision
 ```
 
 
@@ -133,7 +133,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlZNRVNT6IqC54K5Mi1pcHY2IiwNCiAgImFkZCI6
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 195.154.54.131|
+| Address（地址）    | 62.210.25.116|
 | Port（端口）       | 40022|
 | 跳跃端口范围       | 41000-42000|
 | Password（密码）     | dongtaiwang.com |
@@ -146,7 +146,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlZNRVNT6IqC54K5Mi1pcHY2IiwNCiAgImFkZCI6
 **节点3（hysteria2）一键导入链接**
 
 ```bash
-hysteria2://dongtaiwang.com@195.154.54.131:40022?sni=www.microsoft.com&insecure=1&mport=41000-42000#Hysteria2%E8%8A%82%E7%82%B9
+hysteria2://dongtaiwang.com@62.210.25.116:40022?sni=www.microsoft.com&insecure=1&mport=41000-42000#Hysteria2%E8%8A%82%E7%82%B9
 ```
 
 **如果想搭建自己的v2ray节点，参考[自建v2ray服务器教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) （共18个节点） 。也可以考虑[付费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/V2free%E6%9C%BA%E5%9C%BA) ,2020年开始已稳定运行5年。**

@@ -1,1 +1,1 @@
-{"version": 1, "servers": [{"id": "d3151168-fc1a-4ad0-98ed-a1646146be9f", "remarks": "SS\u8282\u70b9-ipv6", "server": "2001:bc8:32d7:225::2", "server_port": 12345, "password": "alvin9999.com", "method": "aes-256-gcm", "plugin": null, "plugin_opts": null}]}
+{"version": 1, "servers": [{"id": "520f7d60-9138-4319-93e3-90917efb5086", "remarks": "SS\u8282\u70b9-ipv6", "server": "2001:bc8:32d7:225::2", "server_port": 12345, "password": "alvin9999.com", "method": "aes-256-gcm", "plugin": null, "plugin_opts": null}]}

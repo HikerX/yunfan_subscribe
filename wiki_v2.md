@@ -61,7 +61,7 @@
 
 | 备用网址 | 描述 |
 |---------------------|-------------------------------------------|
-| [https://3github.com/Alvin9999-newpac/fanqiang/wiki/v2ray免费账号](https://3github.com/Alvin9999-newpac/fanqiang/wiki/v2ray免费账号) | GitHub镜像，仅限大陆地区访问 |  
+| [https://jgithub.xyz/Alvin9999-newpac/fanqiang/wiki/v2ray免费账号](https://jgithub.xyz/Alvin9999-newpac/fanqiang/wiki/v2ray免费账号) | GitHub镜像，仅限大陆地区访问 |  
 | [https://gitlab.com/zhifan999/fq/-/wikis/v2ray免费账号](https://gitlab.com/zhifan999/fq/-/wikis/v2ray免费账号)         | GitLab 网站，建议保存                      | 
 | [https://alvin9999.com/v2ray免费账号](https://alvin9999.com/v2ray免费账号) |Free Air官网，独立站点，长久地址，建议保存，如果被墙请翻墙打开|  
 | [https://s3.dualstack.us-east-1.amazonaws.com/zhifan/v2ray.html](https://s3.dualstack.us-east-1.amazonaws.com/zhifan/v2ray.html)         | Free Air镜像，建议保存|    

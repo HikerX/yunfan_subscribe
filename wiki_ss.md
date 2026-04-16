@@ -150,15 +150,20 @@ VPS推荐：
 
 **客户端下载链接**：
 
-| 平台     | 客户端         | 最新版下载链接                                                                                                                                         | 镜像下载链接                                                                                                                                               |
-| -------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows  | ShadowsocksR   | [GitHub 最新版](https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases)                                                             | [GitHub 镜像](https://dgithub.xyz/shadowsocksr-backup/shadowsocksr-csharp/releases)                                                                 |
-| Windows  | Shadowsocks    | [GitHub 最新版](https://github.com/shadowsocks/shadowsocks-windows/releases)                                                                     
-| Windows | v2rayN | [GitHub 最新版](https://github.com/2dust/v2rayN/releases/latest) (下载带SelfContained的文件) | [GitHub 镜像](https://jgithub.xyz/2dust/v2rayN/releases/latest) |
-| [GitHub 镜像](https://dgithub.xyz/shadowsocks/shadowsocks-windows/releases)                                                                         |
-| macOS    | ShadowsocksR   | [GitHub 最新版](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases)                                                                 | [GitHub 镜像](https://dgithub.xyz/shadowsocksr-backup/ShadowsocksX-NG/releases)                                                                     |
-| Linux    | Shadowsocks-Qt5 | [GitHub 最新版](https://github.com/shadowsocks/shadowsocks-qt5/releases)                                                                         | [GitHub 镜像](https://dgithub.xyz/shadowsocks/shadowsocks-qt5/releases)                                                                              |
-| Android  | ShadowsocksR   | [GitHub 最新版](https://github.com/shadowsocksr-backup/shadowsocksr-android/releases)                                                            | [GitHub 镜像](https://dgithub.xyz/shadowsocksr-backup/shadowsocksr-android/releases)                                                                |
+| 平台    | 客户端          | 最新版下载链接                                                                                      | 镜像下载链接                                                                          |
+| ------- | --------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Windows | ShadowsocksR    | [GitHub 最新版](https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases)                | [GitHub 镜像](https://jgithub.xyz/shadowsocksr-backup/shadowsocksr-csharp/releases)   |
+| Windows | Shadowsocks     | [GitHub 最新版](https://github.com/shadowsocks/shadowsocks-windows/releases)                        | [GitHub 镜像](https://jgithub.xyz/shadowsocks/shadowsocks-windows/releases)           |
+| Windows | v2rayN          | [GitHub 最新版](https://github.com/2dust/v2rayN/releases/latest)(下载带 SelfContained 的文件)      | [GitHub 镜像](https://jgithub.xyz/2dust/v2rayN/releases/latest)                       |
+| macOS   | ShadowsocksR    | [GitHub 最新版](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases)                    | [GitHub 镜像](https://jgithub.xyz/shadowsocksr-backup/ShadowsocksX-NG/releases)       |
+| macOS   | v2rayN-mac      | [GitHub 最新版](https://github.com/2dust/v2rayN/releases/latest)                                    | [GitHub 镜像](https://jgithub.xyz/2dust/v2rayN/releases/latest)                       |
+| macOS   | hiddify-mac     | [GitHub 最新版](https://github.com/hiddify/hiddify-app/releases)                                    | [GitHub 镜像](https://jgithub.xyz/hiddify/hiddify-app/releases)                       |
+| Linux   | Shadowsocks-Qt5 | [GitHub 最新版](https://github.com/shadowsocks/shadowsocks-qt5/releases)                            | [GitHub 镜像](https://jgithub.xyz/shadowsocks/shadowsocks-qt5/releases)               |
+| Linux   | v2rayN-linux    | [GitHub 最新版](https://github.com/2dust/v2rayN/releases/latest)                                    | [GitHub 镜像](https://jgithub.xyz/2dust/v2rayN/releases/latest)                       |
+| Linux   | hiddify-linux   | [GitHub 最新版](https://github.com/hiddify/hiddify-app/releases)                                    | [GitHub 镜像](https://jgithub.xyz/hiddify/hiddify-app/releases)                       |
+| Android | ShadowsocksR    | [GitHub 最新版](https://github.com/shadowsocksr-backup/shadowsocksr-android/releases)               | [GitHub 镜像](https://jgithub.xyz/shadowsocksr-backup/shadowsocksr-android/releases)  |
+| Android | v2rayNG         | [GitHub 最新版](https://github.com/2dust/v2rayNG/releases)                                          | [GitHub 镜像](https://jgithub.xyz/2dust/v2rayNG/releases)                             |
+| Android | hiddify-android | [GitHub 最新版](https://github.com/hiddify/hiddify-app/releases)                                    | [GitHub 镜像](https://jgithub.xyz/hiddify/hiddify-app/releases)                       |
 
 
 - **iOS**：

@@ -47,7 +47,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年4月12日13点30分更新SS节点
+**更新时间：** 北京时间2026年4月16日23点30分新增hysteria2节点，协议更新，速度更快
 
 **⚠️注意：** SSR和SS是比较老的一种协议，可能安全性不强，建议更换为[免费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 
@@ -72,7 +72,7 @@
 
 ***
 
-**🚀 SSR节点**
+**🚀 节点1（SSR）**
 
 | 节点  | 地址                      | 端口 | 密码             | 加密方式 | 协议          | 混淆                     |
 |-------|---------------------------|------|------------------|----------|---------------|--------------------------|
@@ -84,7 +84,7 @@
 ssr://c3NyMi43NjI5ODgueHl6OjMzMzM2OmF1dGhfY2hhaW5fYTpjaGFjaGEyMC1pZXRmOnRsczEuMl90aWNrZXRfYXV0aDpaRzl1WjNSaGFYZGhibWN1WTI5dC8_b2Jmc3BhcmFtPSZyZW1hcmtzPVUxTlM2SXFDNTRLNQ
 ```
 
-**🚀 SS节点**
+**🚀 节点2（SS）**
 
 使用IPv6节点，本地网络需要开启IPv6支持。手机的电话卡流量通常自带IPv6网络，可以使用IPv6地址。手机可以通过热点功能将IPv6网络共享给电脑，这样电脑也能连接到IPv6网络。如果希望电脑自动启用宽带的IPv6网络，请参考相关的[IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -97,6 +97,28 @@ ssr://c3NyMi43NjI5ODgueHl6OjMzMzM2OmF1dGhfY2hhaW5fYTpjaGFjaGEyMC1pZXRmOnRsczEuMl
 
 ```bash
 ss://YWVzLTI1Ni1nY206Z2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5n@[2a14:7584:d118::a]:11111#SS%E8%8A%82%E7%82%B9-ipv6
+```
+
+**🚀 节点3（hysteria2）**
+
+（使用hysteria2节点，需支持hysteria2协议的客户端，windows使用最新版v2rayN客户端，安卓手机使用v2rayNG/hiddify-android，苹果手机使用[Streisand或V2box或shadowrocket](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)，Mac使用v2rayN/hiddify-mac客户端，Linux使用v2rayN/hiddify-linux客户端）
+
+
+| 节点参数               | 参数值                              |
+|--------------------|-----------------------------------|
+| Address（地址）    | 178.18.147.66|
+| Port（端口）       | 29900|
+| Password（密码）     | github.com/Alvin9999-newpac/fanqiang |
+| TLS（传输层安全）   | tls                           |
+| SNI (serverName)   | www.microsoft.com               |
+| Alpn | h3                            |
+| AllowInsecure （跳过证书验证） | true|
+
+
+**节点3（hysteria2）一键导入链接**
+
+```bash
+hysteria2://github.com%2FAlvin9999-newpac%2Ffanqiang@178.18.147.66:29900?sni=www.microsoft.com&insecure=1#hysteria2
 ```
 
 **如果想搭建自己的ss/ssr节点，参考[自建ss/ssr服务器教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%87%AA%E5%BB%BAss%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)。或者考虑[付费ss账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/V2free%E6%9C%BA%E5%9C%BA) 或搬瓦工付费ss/ssr账号-[Just My Socks](https://github.com/Alvin9999-newpac/fanqiang/wiki/Just-My-Socks)。**

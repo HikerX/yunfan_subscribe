@@ -47,7 +47,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年4月24日1点30分更新SS节点
+**更新时间：** 北京时间2026年4月29日16点00分更新SS节点
 
 **⚠️注意：** SSR和SS是比较老的一种协议，可能安全性不强，建议更换为[免费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 
@@ -90,13 +90,13 @@ ssr://c3NyMi43NjI5ODgueHl6OjMzMzM2OmF1dGhfY2hhaW5fYTpjaGFjaGEyMC1pZXRmOnRsczEuMl
 
 | 节点  | 地址         | 端口  | 密码             | 加密方式        |
 |-------|--------------|-------|------------------|-----------------|
-| ipv6 节点  | 2a14:7584:d118::d | 11111| github.com/Alvin9999-newpac/fanqiang | aes-256-gcm     |
+| ipv6 节点  |2a02:6ea0:d32f::f8fe:349b | 11111| github.com/Alvin9999-newpac/fanqiang | aes-256-gcm     |
 
 
 **SS链接**
 
 ```bash
-ss://YWVzLTI1Ni1nY206Z2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5n@[2a14:7584:d118::d]:11111#SS%E8%8A%82%E7%82%B9-ipv6
+ss://YWVzLTI1Ni1nY206Z2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5n@[2a02:6ea0:d32f::f8fe:349b]:11111#SS%E8%8A%82%E7%82%B9-ipv6
 ```
 
 **🚀 节点3（hysteria2）**

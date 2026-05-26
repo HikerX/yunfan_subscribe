@@ -47,7 +47,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年5月6日7点00分更新hysteria2节点
+**更新时间：** 北京时间2026年5月26日14点00分更新SSR节点，由于封锁的原因，SSR节点启用IPv6。
 
 **⚠️注意：** SSR和SS是比较老的一种协议，可能安全性不强，建议更换为[免费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 
@@ -73,9 +73,11 @@
 
 **🚀 节点1（SSR）**
 
+使用IPv6节点，本地网络需要开启IPv6支持。手机的电话卡流量通常自带IPv6网络，可以使用IPv6地址。手机可以通过热点功能将IPv6网络共享给电脑，这样电脑也能连接到IPv6网络。如果希望电脑自动启用宽带的IPv6网络，请参考相关的[IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
+
 | 节点  | 地址                      | 端口 | 密码             | 加密方式 | 协议          | 混淆                     |
 |-------|---------------------------|------|------------------|----------|---------------|--------------------------|
-| ipv4 节点 | ssr2.762988.xyz          | 33336| dongtaiwang.com  | chacha20-ietf     | auth_chain_a  | tls1.2_ticket_auth                    |
+| IPv6 节点 | ssr2.762988.xyz          | 33336| dongtaiwang.com  | chacha20-ietf     | auth_chain_a  | tls1.2_ticket_auth                    |
 
 **SSR节点链接**
 
@@ -89,7 +91,7 @@ ssr://c3NyMi43NjI5ODgueHl6OjMzMzM2OmF1dGhfY2hhaW5fYTpjaGFjaGEyMC1pZXRmOnRsczEuMl
 
 | 节点  | 地址         | 端口  | 密码             | 加密方式        |
 |-------|--------------|-------|------------------|-----------------|
-| ipv6 节点  |2a02:6ea0:d32f::f8fe:349b | 11111| github.com/Alvin9999-newpac/fanqiang | aes-256-gcm     |
+| IPv6 节点  |2a02:6ea0:d32f::f8fe:349b | 11111| github.com/Alvin9999-newpac/fanqiang | aes-256-gcm     |
 
 
 **SS链接**

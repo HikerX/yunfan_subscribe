@@ -77,7 +77,7 @@
 
 | 节点  | 地址                      | 端口 | 密码             | 加密方式 | 协议          | 混淆                     |
 |-------|---------------------------|------|------------------|----------|---------------|--------------------------|
-| IPv6 节点 | ssr2.762988.xyz          | 33336| dongtaiwang.com  | chacha20-ietf     | auth_chain_a  | tls1.2_ticket_auth                    |
+| IPv6/IPv4 节点 | ssr2.762988.xyz          | 33336| dongtaiwang.com  | chacha20-ietf     | auth_chain_a  | tls1.2_ticket_auth                    |
 
 **SSR节点链接**
 

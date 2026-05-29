@@ -48,7 +48,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年5月27日18点30分更新节点1
+**更新时间：** 北京时间2026年5月29日18点30分更新节点1和节点3，封锁加强，ipv4被封的厉害，请用ipv6网络访问
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -76,10 +76,12 @@
 
 （使用xhttp-reality节点，需支持vless-xhttp-reality协议的客户端，windows使用最新版v2rayN客户端，安卓手机使用最新版v2rayNG，苹果手机使用[Streisand或V2box或shadowrocket](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)，Mac使用v2rayN-mac客户端，Linux使用v2rayN-linux客户端）
 
+使用IPv6节点，本地网络需要开启IPv6支持。手机的电话卡流量通常自带IPv6网络，可以使用IPv6地址。手机可以通过热点功能将IPv6网络共享给电脑，这样电脑也能连接到IPv6网络。如果希望电脑自动启用宽带的IPv6网络，请参考相关的[IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
+
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 163.172.227.62|
+| Address（地址）    | vless.453074.xyz|
 | Port（端口）       | 60277|
 | UUID（用户ID）     | 4e9a2de3-4193-49a9-b7fb-b5fff8479904 |
 | encryption（加密方式）| none                           |
@@ -96,7 +98,7 @@
 **节点1（vless）一键导入链接**
 
 ```bash
-vless://4e9a2de3-4193-49a9-b7fb-b5fff8479904@163.172.227.62:60277?encryption=none&security=reality&sni=www.lovelive-anime.jp&fp=chrome&pbk=o2mKhGNfc7h3XaxZgmmAWHnWs5FdwciNPoSFMOh2wng&sid=cd0bbb9f&type=xhttp&path=%2FYplI82oo#VLESS-xhttp-Reality-Vision
+vless://4e9a2de3-4193-49a9-b7fb-b5fff8479904@[2001:bc8:32d7:302::10]:60277?encryption=none&security=reality&sni=www.lovelive-anime.jp&fp=chrome&pbk=o2mKhGNfc7h3XaxZgmmAWHnWs5FdwciNPoSFMOh2wng&sid=cd0bbb9f&type=xhttp&path=%2FYplI82oo#VLESS-xhttp-Reality-Vision
 ```
 
 
@@ -130,12 +132,14 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjJh
 
 （使用hysteria2节点，需支持hysteria2协议的客户端，windows使用最新版v2rayN客户端，安卓手机使用v2rayNG/hiddify-android，苹果手机使用[Streisand或V2box或shadowrocket](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)，Mac使用v2rayN/hiddify-mac客户端，Linux使用v2rayN/hiddify-linux客户端）
 
+使用IPv6节点，本地网络需要开启IPv6支持。手机的电话卡流量通常自带IPv6网络，可以使用IPv6地址。手机可以通过热点功能将IPv6网络共享给电脑，这样电脑也能连接到IPv6网络。如果希望电脑自动启用宽带的IPv6网络，请参考相关的[IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
+
 
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 163.172.126.108|
-| Port（端口）       | 41227|
+| Address（地址）    | 2001:bc8:32d7:302::10|
+| Port（端口）       | 43115|
 | Password（密码）     | github.com/Alvin9999-newpac/fanqiang |
 | TLS（传输层安全）   | tls                           |
 | SNI (serverName)   | www.microsoft.com               |
@@ -146,7 +150,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjJh
 **节点3（hysteria2）一键导入链接**
 
 ```bash
-hysteria2://github.com%2FAlvin9999-newpac%2Ffanqiang@163.172.126.108:41227?sni=www.microsoft.com&insecure=1#hysteria2%E8%8A%82%E7%82%B9
+hysteria2://github.com%2FAlvin9999-newpac%2Ffanqiang@[2001:bc8:32d7:302::10]:43115?sni=www.microsoft.com&insecure=1#hysteria2%E8%8A%82%E7%82%B9
 ```
 
 **如果想搭建自己的v2ray节点，参考[自建v2ray服务器教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) （共18个节点） 。也可以考虑[付费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/V2free%E6%9C%BA%E5%9C%BA) ,2020年开始已稳定运行5年。**

@@ -54,7 +54,7 @@
 
 **节点单用户限速：** 1000kb/s
 
-如果想拥有自己的账号，可以考虑根据[教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)自己搭建节点（共18个节点），或者购买推荐的[付费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/V2free%E6%9C%BA%E5%9C%BA)。
+如果想拥有自己的账号，可以考虑根据[教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)自己搭建节点（共18个节点），或者购买推荐的[付费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E4%BA%91%E5%B8%86%E6%9C%BA%E5%9C%BA)（最低9.9元/月）。
 
 **⚠️注意：** 禁止使用BT下载电影、滥发垃圾邮件、DDOS攻击！BT下载电影会导致服务器被投诉版权而被封！如果不能看到最新的账号信息，请清理浏览器缓存。
 
@@ -150,7 +150,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjJh
 hysteria2://github.com%2FAlvin9999-newpac%2Ffanqiang@62.210.29.98:64772?sni=bing.com&insecure=1#hysteria2-ipv4
 ```
 
-**如果想搭建自己的v2ray节点，参考[自建v2ray服务器教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) （共18个节点） 。也可以考虑[付费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/V2free%E6%9C%BA%E5%9C%BA) ,2020年开始已稳定运行5年。**
+**如果想搭建自己的v2ray节点，参考[自建v2ray服务器教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) （共18个节点） 。也可以考虑[付费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E4%BA%91%E5%B8%86%E6%9C%BA%E5%9C%BA) ,最低9.9元/月。**
 
 ***
 

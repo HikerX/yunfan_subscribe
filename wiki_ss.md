@@ -47,7 +47,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年6月5日22点00分更新节点SSR节点，ipv4 ip被封的厉害，启用了ipv6 ip，请用ipv6网络访问
+**更新时间：** 北京时间2026年6月11日15点00分更新节点3。6月5日22点00分更新节点SSR节点，ipv4 ip被封的厉害，启用了ipv6 ip，请用ipv6网络访问。
 
 **⚠️注意：** SSR和SS是比较老的一种协议，可能安全性不强，建议更换为[免费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 
@@ -107,20 +107,21 @@ ss://YWVzLTI1Ni1nY206Z2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5n@[2a02:6ea0
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 62.210.26.173 |
-| Port（端口）       | 64772|
+| Address（地址）    | hy2.313186.xyz|
+| Port（端口）       | 18066|
 | Password（密码）     | github.com/Alvin9999-newpac/fanqiang |
 | TLS（传输层安全）   | tls                           |
-| SNI (serverName)   | bing.com               |
+| SNI (serverName)   |    hy2.313186.xyz           |
 | Alpn | h3                            |
-| AllowInsecure （跳过证书验证） | true|
+| AllowInsecure （跳过证书验证） | false|
 
 
 **节点3（hysteria2）一键导入链接**
 
 ```bash
-hysteria2://github.com%2FAlvin9999-newpac%2Ffanqiang@62.210.26.173:64772?sni=bing.com&insecure=1#hysteria2-ipv4-2
+hysteria2://github.com%2FAlvin9999-newpac%2Ffanqiang@hy2.313186.xyz:18066?sni=hy2.313186.xyz&insecure=0#hysteria2-ipv4
 ```
+
 
 **如果想搭建自己的ss/ssr节点，参考[自建ss/ssr服务器教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%87%AA%E5%BB%BAss%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)。或者考虑[付费ss账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E4%BA%91%E5%B8%86%E6%9C%BA%E5%9C%BA) （最低9.9元/月） 或搬瓦工付费ss/ssr账号-[Just My Socks](https://github.com/Alvin9999-newpac/fanqiang/wiki/Just-My-Socks)。**
 

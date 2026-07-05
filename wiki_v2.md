@@ -130,7 +130,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjIw
 
 **🚀 节点3（anytls）**
 
-（使用anytls节点，需支持anytls协议的客户端，windows使用最新版v2rayN客户端，安卓手机使用v2rayNG/hiddify-android，苹果手机使用[shadowrocket](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)，Mac使用v2rayN客户端，Linux使用v2rayN客户端）
+（使用anytls节点，需支持anytls协议的客户端，windows使用最新版v2rayN客户端，安卓手机使用v2rayNG，苹果手机使用[shadowrocket](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)，Mac使用v2rayN客户端，Linux使用v2rayN客户端）
 
 
 | 节点参数               | 参数值                              |

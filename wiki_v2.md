@@ -48,7 +48,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年7月6日11点00分更新节点3
+**更新时间：** 北京时间2026年7月9日17点00分更新节点1
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -81,24 +81,24 @@
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | vless.453074.xyz|
-| Port（端口）       | 60277|
-| UUID（用户ID）     | 4e9a2de3-4193-49a9-b7fb-b5fff8479904 |
+| Address（地址）    | 2001:bc8:32d7:302::10|
+| Port（端口）       | 65513|
+| UUID（用户ID）     | 2567e2e0-8d4c-4c51-aee9-5d1f36024472 |
 | encryption（加密方式）| none                           |
 | network（传输协议） | xhttp                               |
 | TLS（传输层安全）   | reality                           |
-| path（路径）   |     /YplI82oo    |
-| SNI (serverName)   | www.lovelive-anime.jp  |
+| path（路径）   |     /6eg3r4an   |
+| SNI (serverName)   | www.yahoo.com  |
 | Fingerprint （指纹）| chrome                            |
-| Public key （公钥） | o2mKhGNfc7h3XaxZgmmAWHnWs5FdwciNPoSFMOh2wng |
-| Shortld            | cd0bbb9f|
+| Public key （公钥） | tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg|
+| Shortld            | 21569dd6|
 | SpiderX            | |
 
 
 **节点1（vless）一键导入链接**
 
 ```bash
-vless://4e9a2de3-4193-49a9-b7fb-b5fff8479904@[2001:bc8:32d7:302::10]:60277?encryption=none&security=reality&sni=www.lovelive-anime.jp&fp=chrome&pbk=o2mKhGNfc7h3XaxZgmmAWHnWs5FdwciNPoSFMOh2wng&sid=cd0bbb9f&type=xhttp&path=%2FYplI82oo#VLESS-xhttp-Reality-Vision
+vless://2567e2e0-8d4c-4c51-aee9-5d1f36024472@[2001:bc8:32d7:302::10]:65513?encryption=none&security=reality&sni=www.yahoo.com&fp=chrome&pbk=tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg&sid=21569dd6&type=xhttp&path=%2F6eg3r4an#VLESS-xhttp-ipv6
 ```
 
 

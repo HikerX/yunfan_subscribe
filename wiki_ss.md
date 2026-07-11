@@ -47,7 +47,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年7月6日11点00分更新节点3
+**更新时间：** 北京时间2026年7月12日1点00分更新节点3
 
 **⚠️注意：** SSR和SS是比较老的一种协议，可能安全性不强，建议更换为[免费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 
@@ -107,18 +107,18 @@ ss://YWVzLTI1Ni1nY206Z2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5n@[2001:bc8:
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 62.210.7.112|
-| Port（端口）       | 55770|
+| Address（地址）    | anytls2.934618.xyz|
+| Port（端口）       | 22880|
 | Password（密码）     | github.com/Alvin9999-newpac/fanqiang |
 | TLS（传输层安全）   | tls                           |
-| SNI (serverName)   |  bing.com       |
+| SNI (serverName)   |  anytls2.934618.xy       |
 | Alpn | h3                            |
-| AllowInsecure （跳过证书验证） | true|
+| AllowInsecure （跳过证书验证） | false|
 
 **节点3（anytls）一键导入链接**
 
 ```bash
-anytls://github.com%2FAlvin9999-newpac%2Ffanqiang@62.210.7.112:55770?security=tls&sni=bing.com&allowInsecure=1&type=tcp#github-anytls
+anytls://github.com%2FAlvin9999-newpac%2Ffanqiang@anytls2.934618.xyz:22880?security=tls&sni=anytls2.934618.xyz&type=tcp#github-anytls-1
 ```
 
 

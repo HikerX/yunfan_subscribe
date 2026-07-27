@@ -118,7 +118,7 @@ def docode_uri2cfg(uri_ss):
     uuidv4 = str(uuid.uuid4())
     #print(uuidv4)
     if  matched.group('plugin') or matched.group('plugin_opts'):
-        print("排除：%s\n原因：🔩 plugin=%s, plugin_opts=%s" % (uri_ss, matched.group('plugin'), 
+        print("排除：%s\n原因：🧩 plugin=%s, plugin_opts=%s" % (uri_ss, matched.group('plugin'), 
         matched.group('plugin_opts')))
     cfg = {
         'id': uuidv4,
@@ -171,7 +171,7 @@ def main():
     #ssr 添加 group属性
     alv_ssr_uris = [ add_ssr_group(ssr) for ssr in alv_ssr_iter];
     #将 ss-uri 转换成 json 格式 config    
-    ss_cfg_list = [docode_uri2cfg(u) for u in alv_ss_iter]    
+    full_ss_cfg_list = [docode_uri2cfg(u) for u in alv_ss_iter]    
     #for s in alv_ss_iter:
         #ss_cfg_list.extend()
     #增加更多ss uri, 数量多，但质量不高，且有的连格式都不合规，严格匹配过滤
@@ -186,10 +186,11 @@ def main():
     extra_uri_list = extra_uri_plain.split("\n");     
     extra_ss_iter = filter(lambda s : re.match(pattern_ss, s), extra_uri_list);    
     extra_ss_list = list(extra_ss_iter); #i
-    without_plugin_list = [ c for u in extra_ss_list if (c:=docode_uri2cfg(u)).get("plugin") is None]
-    ss_cfg_list.extend(without_plugin_list)    
-    ss_json = json.dumps({'version': 1,'servers': ss_cfg_list})
-    print(f"全部 ss * {len(ss_cfg_list)}")    
+    #without_plugin_list = [ c for u in extra_ss_list if (c:=docode_uri2cfg(u)).get("plugin") is None]
+    extra_ss_cfg_list = [ docode_uri2cfg(u) for u in extra_ss_list]
+    full_ss_cfg_list.extend(extra_ss_cfg_list)    
+    ss_json = json.dumps({'version': 1,'servers': full_ss_cfg_list})
+    print(f"全部 ss * {len(full_ss_cfg_list)}")    
     #format
     ssr_sub = base64.urlsafe_b64encode("\n".join(alv_ssr_uris).encode(
     "utf-8")).decode("utf-8");

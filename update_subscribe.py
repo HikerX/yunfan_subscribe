@@ -77,7 +77,7 @@ else:
     print("当前不在Github Action环境")
     url_ss_source = "https://gitlab.com/zhifan999/fq/-/wikis/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
     url_v2_source = "https://gitlab.com/zhifan999/fq/-/wikis/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
-    extra_source_url="https://proxy.v2gh.com/https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
+    extra_source_url="https://gh-proxy.com/https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
 
 pattern_ss = r"ss://(?P<userinfo>[\w=+-]+)@\[?(?P<hostname>[A-Za-z0-9-:.]+)\]?:(?P<port>[0-9]+)"\
 r"/?(\?plugin=(?P<plugin>[^;]+);?(?P<plugin_opts>[^#]+)?)?#(?P<tag>.+)"
@@ -180,6 +180,7 @@ def main():
     write_to_local("extra_uri.txt", md_v2);
     while len(extra_uri_b64) % 4 != 0:
         extra_uri_b64 += "=";
+    print(extra_uri_b64);
     extra_uri_plain = base64.urlsafe_b64decode(extra_uri_b64.encode("utf-8")
     ).decode("utf-8")
     extra_uri_list = extra_uri_plain.split("\n");     
@@ -190,7 +191,7 @@ def main():
     ss_json = json.dumps({'version': 1,'servers': ss_cfg_list})
     print(f"全部 ss * {len(ss_cfg_list)}")    
     #format
-    ssr_sub = base64.b64encode("\n".join(alv_ssr_uris).encode(
+    ssr_sub = base64.urlsafe_b64encode("\n".join(alv_ssr_uris).encode(
     "utf-8")).decode("utf-8");
     #ss, ssr, v2
     v2_mix_sub = base64.b64encode("\n".join(alv_v2_list + 

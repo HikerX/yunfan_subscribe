@@ -190,13 +190,13 @@ def main():
     ss_json = json.dumps({'version': 1,'servers': ss_cfg_list})
     print(f"全部 ss * {len(ss_cfg_list)}")    
     #format
-    ssr_sub = base64.urlsafe_b64encode("\n".join(alv_ssr_uris).encode(
+    ssr_sub = base64.b64encode("\n".join(alv_ssr_uris).encode(
     "utf-8")).decode("utf-8");
     #ss, ssr, v2
-    v2_mix_sub = base64.urlsafe_b64encode("\n".join(alv_v2_list + 
+    v2_mix_sub = base64.b64encode("\n".join(alv_v2_list + 
     alv_ss_list + extra_ss_list).encode("utf-8")).decode("utf-8");
     
-    v2_alv_sub = base64.urlsafe_b64encode("\n".join(alv_v2_list
+    v2_alv_sub = base64.b64encode("\n".join(alv_v2_list
     ).encode("utf-8")).decode("utf-8");
         
     print(f"\n存储到文件.")

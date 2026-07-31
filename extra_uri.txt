@@ -48,7 +48,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年7月27日6点30分更新节点3
+**更新时间：** 北京时间2026年7月31日18点30分更新节点2
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -109,22 +109,22 @@ vless://2567e2e0-8d4c-4c51-aee9-5d1f36024472@[2001:bc8:32d7:302::10]:65513?encry
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | 2001:bc8:32d7:225::3|
-| Port（端口）       | 55009|
-| UUID（用户ID）     | cd80d0a4-a8ef-4492-b956-da82a6cecaf9 |
+| Address（地址）    | 2001:bc8:32d7:1a9::2|
+| Port（端口）       | 23388|
+| UUID（用户ID）     | 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a |
 | alterid（额外ID）     | 0                 |
 | security（加密方式）| auto                           |
 | network（传输协议） | ws                               |
 | headerType（伪装类型）| none                           |
 | host（伪装域名）            |                       |
-| path（路径）   | /0zNW56sF     |
+| path（路径）   | /github.com/Alvin9999-newpac/fanqiang     |
 | TLS (传输层安全)   | 不填                     |
 
 
 **节点2（vmess）一键导入链接**
 
 ```bash
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjIwMDE6YmM4OjMyZDc6MjI1OjozIiwNCiAgInBvcnQiOiAiNTUwMDkiLA0KICAiaWQiOiAiY2Q4MGQwYTQtYThlZi00NDkyLWI5NTYtZGE4MmE2Y2VjYWY5IiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIvMHpOVzU2c0YiLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjIwMDE6YmM4OjMyZDc6MWE5OjoyIiwNCiAgInBvcnQiOiAiMjMzODgiLA0KICAiaWQiOiAiM2E5NjZkMjAtN2I5ZC00OGNjLWJhMmMtOGQzODE2MWI2ZDNhIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAicGF0aCI6ICIvZ2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5nIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiIsDQogICJmcCI6ICIiLA0KICAiaW5zZWN1cmUiOiAiMCIsDQogICJ2Y24iOiAiIiwNCiAgInBjcyI6ICIiDQp9
 ```
 
 

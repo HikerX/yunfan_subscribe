@@ -47,7 +47,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年7月27日6点00分更新节点3
+**更新时间：** 北京时间2026年8月6日17点30分更新节点3
 
 **⚠️注意：** SSR和SS是比较老的一种协议，可能安全性不强，建议更换为[免费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 
@@ -108,18 +108,18 @@ ss://YWVzLTI1Ni1nY206Z2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5n@[2001:bc8:
 
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
-| Address（地址）    | ip3.934618.xyz|
-| Port（端口）       | 17700|
+| Address（地址）    | ip4.934618.xyz|
+| Port（端口）       | 51133|
 | Password（密码）     | github.com/Alvin9999-newpac/fanqiang |
 | TLS（传输层安全）   | tls                           |
-| SNI (serverName)   |  ip3.934618.xyz      |
+| SNI (serverName)   |  ip4.934618.xyz      |
 | Alpn | h3                            |
 | AllowInsecure （跳过证书验证） | false|
 
 **节点3（anytls）一键导入链接**
 
 ```bash
-anytls://github.com%2FAlvin9999-newpac%2Ffanqiang@ip3.934618.xyz:17700?security=tls&sni=ip3.934618.xyz&insecure=0&allowInsecure=0&type=tcp&headerType=none#github-anytls-1
+anytls://github.com%2FAlvin9999-newpac%2Ffanqiang@ip4.934618.xyz:51133?security=tls&sni=ip4.934618.xyz&insecure=0&allowInsecure=0&type=tcp&headerType=none#github-anytls-1
 ```
 
 

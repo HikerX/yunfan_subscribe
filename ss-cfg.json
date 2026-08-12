@@ -1,1 +1,1 @@
-{"version": 1, "servers": [{"id": "80ad9839-71f6-4802-aabf-c65aca3384e0", "remarks": "SS-IPv6", "server": "2001:bc8:32d7:17b::100", "server_port": 22222, "password": "github.com/Alvin9999-newpac/fanqiang", "method": "aes-256-gcm", "plugin": null, "plugin_opts": null}]}
+{"version": 1, "servers": [{"id": "118a4bca-4803-439b-bbf6-559e9ff39c36", "remarks": "SS-IPv6", "server": "2001:bc8:32d7:17b::100", "server_port": 22222, "password": "github.com/Alvin9999-newpac/fanqiang", "method": "aes-256-gcm", "plugin": null, "plugin_opts": null}]}

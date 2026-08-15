@@ -101,28 +101,6 @@ ss://YWVzLTI1Ni1nY206Z2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5n@[2001:bc8:
 ```
 
 
-**🚀 节点3（anytls）**
-
-（使用anytls节点，需支持anytls协议的客户端，windows使用最新版v2rayN客户端，安卓手机使用v2rayNG，苹果手机使用[shadowrocket](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)，Mac使用v2rayN客户端，Linux使用v2rayN客户端）
-
-
-| 节点参数               | 参数值                              |
-|--------------------|-----------------------------------|
-| Address（地址）    | ip4.934618.xyz|
-| Port（端口）       | 51133|
-| Password（密码）     | github.com/Alvin9999-newpac/fanqiang |
-| TLS（传输层安全）   | tls                           |
-| SNI (serverName)   |  ip4.934618.xyz      |
-| Alpn | h3                            |
-| AllowInsecure （跳过证书验证） | false|
-
-**节点3（anytls）一键导入链接**
-
-```bash
-anytls://github.com%2FAlvin9999-newpac%2Ffanqiang@ip4.934618.xyz:51133?security=tls&sni=ip4.934618.xyz&insecure=0&allowInsecure=0&type=tcp&headerType=none#github-anytls-1
-```
-
-
 **如果想搭建自己的ss/ssr节点，参考[自建ss/ssr服务器教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%87%AA%E5%BB%BAss%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)。或者考虑[付费ss账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E4%BA%91%E5%B8%86%E6%9C%BA%E5%9C%BA) （最低9.9元/月） 或搬瓦工付费ss/ssr账号-[Just My Socks](https://github.com/Alvin9999-newpac/fanqiang/wiki/Just-My-Socks)。**
 
 ***

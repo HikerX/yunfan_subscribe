@@ -48,7 +48,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年8月6日17点30分更新节点3
+**更新时间：** 北京时间2026年8月6日17点30分更新节点2
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -72,37 +72,8 @@
 
 现在客户端很多都支持从剪贴板导入链接，复制粘贴一键导入链接即可。
 
-**🚀 节点1（vless）**
 
-（使用xhttp-reality节点，需支持vless-xhttp-reality协议的客户端，windows使用最新版v2rayN客户端，安卓手机使用最新版v2rayNG，苹果手机使用[Streisand或V2box或shadowrocket](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)，Mac使用v2rayN-mac客户端，Linux使用v2rayN-linux客户端）
-
-使用IPv6节点，本地网络需要开启IPv6支持。手机的电话卡流量通常自带IPv6网络，可以使用IPv6地址。手机可以通过热点功能将IPv6网络共享给电脑，这样电脑也能连接到IPv6网络。如果希望电脑自动启用宽带的IPv6网络，请参考相关的[IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
-
-
-| 节点参数               | 参数值                              |
-|--------------------|-----------------------------------|
-| Address（地址）    | 2001:bc8:32d7:302::10|
-| Port（端口）       | 65513|
-| UUID（用户ID）     | 2567e2e0-8d4c-4c51-aee9-5d1f36024472 |
-| encryption（加密方式）| none                           |
-| network（传输协议） | xhttp                               |
-| TLS（传输层安全）   | reality                           |
-| path（路径）   |     /6eg3r4an   |
-| SNI (serverName)   | www.yahoo.com  |
-| Fingerprint （指纹）| chrome                            |
-| Public key （公钥） | tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg|
-| Shortld            | 21569dd6|
-| SpiderX            | |
-
-
-**节点1（vless）一键导入链接**
-
-```bash
-vless://2567e2e0-8d4c-4c51-aee9-5d1f36024472@[2001:bc8:32d7:302::10]:65513?encryption=none&security=reality&sni=www.yahoo.com&fp=chrome&pbk=tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg&sid=21569dd6&type=xhttp&path=%2F6eg3r4an#VLESS-xhttp-ipv6
-```
-
-
-**🚀 节点2（vmess）**
+**🚀 节点1（vmess）**
 
 使用IPv6节点，本地网络需要开启IPv6支持。手机的电话卡流量通常自带IPv6网络，可以使用IPv6地址。手机可以通过热点功能将IPv6网络共享给电脑，这样电脑也能连接到IPv6网络。如果希望电脑自动启用宽带的IPv6网络，请参考相关的[IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -121,14 +92,14 @@ vless://2567e2e0-8d4c-4c51-aee9-5d1f36024472@[2001:bc8:32d7:302::10]:65513?encry
 | TLS (传输层安全)   | 不填                     |
 
 
-**节点2（vmess）一键导入链接**
+**节点1（vmess）一键导入链接**
 
 ```bash
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjIwMDE6YmM4OjMyZDc6MWE5OjoyIiwNCiAgInBvcnQiOiAiMjMzODgiLA0KICAiaWQiOiAiM2E5NjZkMjAtN2I5ZC00OGNjLWJhMmMtOGQzODE2MWI2ZDNhIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAicGF0aCI6ICIvZ2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5nIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiIsDQogICJmcCI6ICIiLA0KICAiaW5zZWN1cmUiOiAiMCIsDQogICJ2Y24iOiAiIiwNCiAgInBjcyI6ICIiDQp9
 ```
 
 
-**🚀 节点3（anytls）**
+**🚀 节点2（anytls）**
 
 （使用anytls节点，需支持anytls协议的客户端，windows使用最新版v2rayN客户端，安卓手机使用v2rayNG，苹果手机使用[shadowrocket](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)，Mac使用v2rayN客户端，Linux使用v2rayN客户端）
 
@@ -143,7 +114,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjIw
 | Alpn | h3                            |
 | AllowInsecure （跳过证书验证） | false|
 
-**节点3（anytls）一键导入链接**
+**节点2（anytls）一键导入链接**
 
 ```bash
 anytls://github.com%2FAlvin9999-newpac%2Ffanqiang@ip4.934618.xyz:51133?security=tls&sni=ip4.934618.xyz&insecure=0&allowInsecure=0&type=tcp&headerType=none#github-anytls-1

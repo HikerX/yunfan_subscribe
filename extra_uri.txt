@@ -48,7 +48,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年8月6日17点30分更新节点2
+**更新时间：** 北京时间2026年8月28日9点30分更新NekoBoxForAndroid下载地址
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -101,7 +101,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjIw
 
 **🚀 节点2（anytls）**
 
-（使用anytls节点，需支持anytls协议的客户端，windows使用最新版v2rayN客户端，安卓手机使用ClashMetaForAndroid，苹果手机使用[shadowrocket](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)，Mac使用v2rayN客户端，Linux使用v2rayN客户端）
+（使用anytls节点，需支持anytls协议的客户端，windows使用最新版v2rayN客户端，安卓手机使用NekoBoxForAndroid，苹果手机使用[shadowrocket](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)，Mac使用v2rayN客户端，Linux使用v2rayN客户端）
 
 
 | 节点参数               | 参数值                              |
@@ -156,7 +156,7 @@ VPS推荐：
 | Linux | v2rayN-linux | [GitHub 最新版](https://github.com/2dust/v2rayN/releases/latest) | [GitHub 镜像](https://jgithub.xyz/2dust/v2rayN/releases/latest) |
 | Linux | hiddify-linux  | [GitHub 最新版](https://github.com/hiddify/hiddify-app/releases) | [GitHub 镜像](https://jgithub.xyz/hiddify/hiddify-app/releases) |
 | Android | v2rayNG | [GitHub 最新版](https://github.com/2dust/v2rayNG/releases) | [GitHub 镜像](https://jgithub.xyz/2dust/v2rayNG/releases) |
-| Android | ClashMetaForAndroid   | [GitHub 最新版](https://github.com/MetaCubeX/ClashMetaForAndroid/releases) | [GitHub 镜像](https://jgithub.xyz/MetaCubeX/ClashMetaForAndroid/releases) |
+| Android | NekoBoxForAndroid   | [GitHub 最新版](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases) | [GitHub 镜像](https://jgithub.xyz/MatsuriDayo/NekoBoxForAndroid/releases) |
 
 iOS：[没有美区AppleID的翻墙教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6) [iOS注册美区Apple ID教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/iOS%E6%B3%A8%E5%86%8C%E7%BE%8E%E5%8C%BAApple-ID%E6%95%99%E7%A8%8B) 
 

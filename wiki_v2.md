@@ -48,7 +48,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年10月17日13点00分更新节点1
+**更新时间：** 北京时间2026年10月29日22点00分更新节点2
 
 ⚠️通知：2025年8月20日凌晨 00:34–01:48（UTC+8），大陆网络发生突发性大规模异常，境外ipv4 443 端口（HTTPS 加密访问）流量在此期间一度被全面屏蔽。虽然持续时间仅一小时左右，但不少人推测这可能是长城防火墙（GFW）升级后的深夜测试演练。根据网络社区反馈，当时极端情况下 IPv6 网络翻墙并未受阻。考虑到未来类似大规模封锁或将成为常态，因此有必要提前做好准备：学习如何开启并使用 IPv6 网络。 参考Windows 7/8/10/11、Linux、macOS，以及路由器的 [IPv6开启与配置教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/IPv6%E5%BC%80%E5%90%AF%E4%B8%8E%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B)。
 
@@ -106,7 +106,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjIw
 | 节点参数               | 参数值                              |
 |--------------------|-----------------------------------|
 | Address（地址）    | ip5.934618.xyz|
-| Port（端口）       | 44889|
+| Port（端口）       | 23550|
 | Password（密码）     | dongtaiwang.com |
 | TLS（传输层安全）   | tls                           |
 | SNI (serverName)   |  ip5.934618.xyz      |
@@ -116,7 +116,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjIw
 **节点2（anytls）一键导入链接**
 
 ```bash
-anytls://dongtaiwang.com@ip5.934618.xyz:44889?security=tls&sni=ip5.934618.xyz&insecure=0&allowInsecure=0&type=tcp&headerType=none#github-anytls-1
+anytls://dongtaiwang.com@ip5.934618.xyz:23550?security=tls&sni=ip5.934618.xyz&insecure=0&allowInsecure=0&type=tcp&headerType=none#github-anytls-1
 ```
 
 **如果想搭建自己的v2ray节点，参考[自建v2ray服务器教程](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) （共18个节点） 。也可以考虑[付费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/%E4%BA%91%E5%B8%86%E6%9C%BA%E5%9C%BA) ,最低9.9元/月。**

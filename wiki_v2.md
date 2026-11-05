@@ -144,11 +144,11 @@ VPS推荐：
 
 ### v2ray客户端下载及使用方法
 
-**注意**：第一次使用v2ray时，需要安装最新版NET Framework ，不然无法正常运行，[微软官网](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/net48)下载。
 
 | 平台 | 客户端 | 最新版下载 | 镜像下载 |
 | --- | --- | --- | --- |
 | Windows | v2rayN | [GitHub 最新版](https://github.com/2dust/v2rayN/releases/latest) | [GitHub 镜像](https://jgithub.xyz/2dust/v2rayN/releases/latest) |
+| Windows-XP | v2rayN-XP | [GitHub 最新版](https://github.com/ihidao/v2rayN_for_XP) | [GitHub 镜像](https://jgithub.xyz/ihidao/v2rayN_for_XP) |
 | macOS | v2rayN-mac  | [GitHub 最新版](https://github.com/2dust/v2rayN/releases/latest) | [GitHub 镜像](https://jgithub.xyz/2dust/v2rayN/releases/latest) |
 | macOS | hiddify-mac  | [GitHub 最新版](https://github.com/hiddify/hiddify-app/releases) | [GitHub 镜像](https://jgithub.xyz/hiddify/hiddify-app/releases) |
 | Linux | v2rayN-linux | [GitHub 最新版](https://github.com/2dust/v2rayN/releases/latest) | [GitHub 镜像](https://jgithub.xyz/2dust/v2rayN/releases/latest) |

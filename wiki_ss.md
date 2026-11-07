@@ -47,7 +47,7 @@
 
 ***
 
-**更新时间：** 北京时间2026年8月12日9点00分修复节点1
+**更新时间：** 北京时间2026年11月7日8点00分更新节点1
 
 **⚠️注意：** SSR和SS是比较老的一种协议，可能安全性不强，建议更换为[免费v2ray账号](https://github.com/Alvin9999-newpac/fanqiang/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 
@@ -75,7 +75,7 @@
 
 | 节点  | 地址                      | 端口 | 密码             | 加密方式 | 协议          | 混淆                     |
 |-------|---------------------------|------|------------------|----------|---------------|--------------------------|
-| IPv6 节点 | ssr2.762988.xyz          | 33336| dongtaiwang.com  | chacha20-ietf     | auth_chain_a  | tls1.2_ticket_auth                    |
+| IPv4 节点 | ssr2.762988.xyz          | 33336| dongtaiwang.com  | chacha20-ietf     | auth_chain_a  | tls1.2_ticket_auth                    |
 
 **SSR节点链接**
 

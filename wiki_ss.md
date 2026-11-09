@@ -62,6 +62,7 @@
 | 备用网址 | 说明 |
 | --- | --- |
 | [https://gitlab.com/zhifan999/fq/-/wikis/ss免费账号](https://gitlab.com/zhifan999/fq/-/wikis/ss免费账号) | GitLab 网站，建议保存 |
+| [https://5github.com/Alvin9999-newpac/fanqiang/wiki/ss免费账号](https://5github.com/Alvin9999-newpac/fanqiang/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7) | GitHub 镜像，仅限国内ip访问 |
 | [https://alvin9999.com/ss免费账号](https://alvin9999.com/ss免费账号) | Free Air 官网，独立站点，长久地址，建议保存；如果被墙请翻墙打开 |
 
 ***

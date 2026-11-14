@@ -66,7 +66,9 @@ from datetime import datetime
 
 IS_GITHUB_ACTION = bool(os.getenv("GITHUB_ACTION"));
 
-if IS_GITHUB_ACTION:
+SOURCE_INDEX = 1;
+
+if SOURCE_INDEX == 0:
     print("当前在Github Action环境")
     #251224新仓库链接
     url_ss_source = "https://raw.githubusercontent.com/wiki/Alvin9999-newpac/fanqiang/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7.md";
@@ -161,7 +163,7 @@ def main():
     #同名称的md文件，在github中换行符号是\n ， 而在gitlab却是\r\n
     #是作者同步的同一个文件吗，还是只名称一样？ 
     pattern_uri_md = r"(?<=```bash\n)[^`\n]+(?=\n```\n)" if \
-    IS_GITHUB_ACTION else r"(?<=```bash\r\n)[^`\r\n]+(?=\r\n```\r\n)";
+    SOURCE_INDEX == 0 else r"(?<=```bash\r\n)[^`\r\n]+(?=\r\n```\r\n)";
     alv_ss_list = re.findall(pattern_uri_md, md_ss);
     alv_v2_list = re.findall(pattern_uri_md, md_v2);        
     print(f"获得配置  ss(ssr) * {len(alv_ss_list)}, v2ray * {len(alv_v2_list)}")

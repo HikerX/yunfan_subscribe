@@ -186,7 +186,7 @@ def main():
     extra_uri_list = extra_uri_plain.split("\n");     
     extra_ss_iter = filter(lambda s : re.match(pattern_ss, s), extra_uri_list);    
     extra_ss_list = list(extra_ss_iter); #i
-    #without_plugin_list = [ c for u in extra_ss_list if (c:=docode_uri2cfg(u)).get("plugin") is None]
+    #ss_without_plugin_list = [ c for u in extra_ss_list if (c:=docode_uri2cfg(u)).get("plugin") is None]
     extra_ss_cfg_list = [ docode_uri2cfg(u) for u in extra_ss_list]
     full_ss_cfg_list.extend(extra_ss_cfg_list)    
     ss_json = json.dumps({'version': 1,'servers': full_ss_cfg_list})
@@ -194,7 +194,7 @@ def main():
     #format
     ssr_sub = base64.urlsafe_b64encode("\n".join(alv_ssr_uris).encode(
     "utf-8")).decode("utf-8");
-    #ss, ssr, v2
+    #ss, ssr, v2 注意：v2-cfg 使用 寻常b64方法，而ss-url 使用url-safe b64编码方法
     v2_mix_sub = base64.b64encode("\n".join(alv_v2_list + 
     alv_ss_list + extra_ss_list).encode("utf-8")).decode("utf-8");
     

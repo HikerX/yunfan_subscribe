@@ -82,7 +82,7 @@ else:
     extra_source_url="https://gh-proxy.com/https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray";
 
 pattern_ss = r"ss://(?P<userinfo>[\w=+-]+)@\[?(?P<hostname>[A-Za-z0-9-:.]+)\]?:(?P<port>[0-9]+)"\
-r"/?(\?plugin=(?P<plugin>[^;]+);?(?P<plugin_opts>[^#]+)?)?#(?P<tag>.+)"
+r"/?(\?)?(udp=1)?(plugin=(?P<plugin>[^;]+);?(?P<plugin_opts>[^#]+)?)?#(?P<tag>.+)"
 
 #实测 uri多，但是基本都是无效
 #extra_source_url = "https://proxy.v2gh.com/https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v2"
@@ -147,7 +147,7 @@ def add_ssr_group(ssr_url):
     #根据模板，添加"group"属性
     plain_content += "&group=eXVuZmFu"; #yunfan    
     return "ssr://" + base64.urlsafe_b64encode(
-    plain_content.encode("utf-8")).decode("utf-8");            
+    plain_content.encode("utf-8")).decode("utf-8");
 
 def main():
     print(f"读取指定md文档, 当前北京时间为 {get_current_time()}")
@@ -163,9 +163,11 @@ def main():
     #同名称的md文件，在github中换行符号是\n ， 而在gitlab却是\r\n
     #是作者同步的同一个文件吗，还是只名称一样？ 
     pattern_uri_md = r"(?<=```bash\n)[^`\n]+(?=\n```\n)" if \
-    SOURCE_INDEX == 0 else r"(?<=```bash\r\n)[^`\r\n]+(?=\r\n```\r\n)";
+    SOURCE_INDEX == 0 else r"(?<=```text\n)[^`\n]+(?=\n```\n)";
+    #SOURCE_INDEX == 0 else r"(?<=```text\r\n)[^`\r\n]+(?=\r\n```\r\n)";
     alv_ss_list = re.findall(pattern_uri_md, md_ss);
-    alv_v2_list = re.findall(pattern_uri_md, md_v2);        
+    alv_v2_list = re.findall(pattern_uri_md, md_v2);
+    
     print(f"获得配置  ss(ssr) * {len(alv_ss_list)}, v2ray * {len(alv_v2_list)}")
     #来源可靠，简单匹配
     alv_ss_iter = filter( lambda s : re.match(r"ss://", s), alv_ss_list)
@@ -182,10 +184,12 @@ def main():
     write_to_local("extra_uri.txt", md_v2);
     while len(extra_uri_b64) % 4 != 0:
         extra_uri_b64 += "=";
-    print(extra_uri_b64);
     extra_uri_plain = base64.urlsafe_b64decode(extra_uri_b64.encode("utf-8")
     ).decode("utf-8")
+    extra_uri_plain = re.sub(r"[\r\n]+", "\n", extra_uri_plain)
     extra_uri_list = extra_uri_plain.split("\n");     
+    #print(extra_uri_list);
+
     extra_ss_iter = filter(lambda s : re.match(pattern_ss, s), extra_uri_list);    
     extra_ss_list = list(extra_ss_iter); #i
     #ss_without_plugin_list = [ c for u in extra_ss_list if (c:=docode_uri2cfg(u)).get("plugin") is None]

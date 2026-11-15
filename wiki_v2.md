@@ -49,7 +49,7 @@
 
 ### 📢 使用须知
 
-- **更新时间**：北京时间2026年11月6日13点00分更新节点1
+- **更新时间**：北京时间2026年11月15日8点00分更新节点1
 - **节点单用户限速**：1000kb/s
 - **⚠️ 禁止滥用**：禁止使用 BT 下载电影、滥发垃圾邮件、DDOS 攻击！BT 下载电影会导致服务器被投诉版权而被封。
 - **想拥有自己的账号**：可以根据[教程](https://gitlab.com/zhifan999/fq/-/wikis/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)自己搭建节点（共20个节点），或者购买推荐的[付费v2ray账号](https://gitlab.com/zhifan999/fq/-/wikis/%E4%BA%91%E5%B8%86%E6%9C%BA%E5%9C%BA)（最低9.9元/月）。
@@ -75,7 +75,7 @@
 
 | 节点参数 | 参数值 |
 | --- | --- |
-| Address（地址） | `2001:bc8:32d7:1a9::7` |
+| Address（地址） | `2001:bc8:32d7:1a9::8` |
 | Port（端口） | `18901` |
 | UUID（用户ID） | `3a966d20-7b9d-48cc-ba2c-8d38161b6d3a` |
 | alterid（额外ID） | `0` |
@@ -89,7 +89,7 @@
 **节点1（VMess）一键导入链接**
 
 ```text
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjIwMDE6YmM4OjMyZDc6MWE5Ojo3IiwNCiAgInBvcnQiOiAiMTg5MDEiLA0KICAiaWQiOiAiM2E5NjZkMjAtN2I5ZC00OGNjLWJhMmMtOGQzODE2MWI2ZDNhIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAicGF0aCI6ICIvZ2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5nIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiIsDQogICJmcCI6ICIiLA0KICAiaW5zZWN1cmUiOiAiMCIsDQogICJ2Y24iOiAiIiwNCiAgInBjcyI6ICIiDQp9
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzLXdzLWlwdjYiLA0KICAiYWRkIjogIjIwMDE6YmM4OjMyZDc6MWE5Ojo4IiwNCiAgInBvcnQiOiAiMTg5MDEiLA0KICAiaWQiOiAiM2E5NjZkMjAtN2I5ZC00OGNjLWJhMmMtOGQzODE2MWI2ZDNhIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAicGF0aCI6ICIvZ2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5nIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiIsDQogICJmcCI6ICIiLA0KICAiaW5zZWN1cmUiOiAiMCIsDQogICJ2Y24iOiAiIiwNCiAgInBjcyI6ICIiDQp9
 ```
 
 #### 节点2（AnyTLS）

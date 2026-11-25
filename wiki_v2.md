@@ -35,10 +35,10 @@
 - [北宋预言《梅花诗》](https://www.ganjingworld.com/zh-CN/video/1h1avcli4jj3fuuswOXnh1ULh1pc1c)
 - “三阿哥”的戏剧人生：[上集](https://www.ntdtv.com/gb/2021/02/12/a103052600.html) · [中集](https://www.ntdtv.com/gb/2021/02/25/a103061565.html) · [下集](https://www.ntdtv.com/gb/2021/03/24/a103080241.html)
 
-### 🎭 神韵视频推荐
+### 📺 神韵视频推荐
 
-- [2026神韵晚会预告片](https://www.shenyuncreations.com/zh-CN/video/_video_67f730a0899c4920875572a35e7158f6/Shen-Yun-2026-Official-Trailer)
-- [神韵晚会观众反馈(2025)](https://www.shenyuncreations.com/zh-CN/video/_video_84840ca70db041bea52603b4bb464b2e/Shen-Yun-Audience-Reviews-2025)
+- [2027神韵晚会预告片](https://www.shenyuncreations.com/zh-CN/video/_video_b14c0aa43fdd4b4382df3d44638e1051/Shen-Yun-2027-Official-Trailer?view=1&pid=up-next)
+- [神韵晚会观众反馈(2026)](https://www.shenyuncreations.com/zh-CN/video/_video_7ab5ac1d29c04cb8ba2e26bdf12a5419/Shen-Yun-Audience-Reviews-2026?pid=p_wi1wAc5RR3ip)
 - [关于神韵的五个事实](https://www.shenyuncreations.com/zh-CN/video/_video_6383b459b549440897914760fe302331/5-Things-About-Shen-Yun-You-Probably-Didnt-Know?pid=up-next)
 - [如何炼就神韵制作部](https://www.shenyuncreations.com/zh-CN/video/_video_a81c6d107bc242299e1779afb3f2ae9e/What-Does-It-Take-to-be-a-Shen-Yun-Production-Member?pid=p_QN0mwWlwQQWV&view=)
 - [神韵领舞演员专访-王琛](https://www.shenyuncreations.com/zh-CN/video/_video_83840b81df8a4aaeae36addd762cd715/Meet-Principal-Dancer-Angelia-Wang?pid=p_Q3bw9EA4TyKu&view=)
